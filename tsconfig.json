@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target"                : "es5",
+    "module"                : "commonjs",
+    "emitDecoratorMetadata" : false,
+    "experimentalDecorators": true,
+    "declaration"           : true,
+    "sourceMap"             : false,
+    "moduleResolution"      : "node",
+    "lib"                   : [
+      "dom",
+      "es5",
+      "es6",
+      "es2015.core",
+      "es2015.promise"
+    ],
+
+    "rootDir"               : "src",
+    "outDir"                : "./dist"
+  },
+  "exclude"        : [
+    "node_modules",
+    "dist",
+    "test",
+    "test.ts"
+  ]
+}
