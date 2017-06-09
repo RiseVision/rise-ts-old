@@ -10,7 +10,9 @@
   },
   "scripts": {
     "package": "shx rm -rf ./dist/; tsc",
-    "prepublish": "shx rm -rf ./dist/ && npm run package"
+    "prepublish": "shx rm -rf ./dist/ && npm run package",
+    "docs": "rm docs -rf; typedoc  -excludeNotExported --excludePrivate --stripInternal --disableOutputCheck --hideGenerator --module umd --mode modules --tsconfig ./tsconfig.json  --out docs/ src/ "
+
   },
   "keywords": [
     "rise",
@@ -35,16 +37,17 @@
     "request-promise": "^4.2.1"
   },
   "devDependencies": {
-    "assert": "1.4.1",
-    "shx": "^0.2.2",
     "@types/chai": "^4.0.0",
     "@types/mocha": "^2.2.41",
     "@types/node": "^7.0.29",
     "@types/sinon": "^2.3.1",
+    "assert": "1.4.1",
     "chai": "^4.0.2",
     "mocha": "^3.4.2",
+    "shx": "^0.2.2",
     "sinon": "^2.3.2",
     "ts-node": "^3.0.6",
+    "typedoc": "^0.7.1",
     "typescript": "^2.3.4"
   }
 }

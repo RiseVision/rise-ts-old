@@ -9,18 +9,47 @@ import { Signatures } from './api/signatures';
 import { Delegates } from './api/delegates';
 import { MultiSignatures } from './api/multiSignatures';
 
-export interface Wrapper {
+export interface APIWrapper {
+  /**
+   * Accounts APIs
+   */
   accounts: Accounts
-  loader: Loader
-  transactions: Transactions
-  peers: Peers
-  signatures: Signatures
+  /**
+   * Blocks Query APIs
+   */
   blocks: Blocks
+  /**
+   * Node loading status APIs
+   */
+  loader: Loader
+  /**
+   * Transactions APIs
+   */
+  transactions: Transactions
+  /**
+   * Peers APIs
+   */
+  peers: Peers
+  /**
+   * Signature APIs
+   */
+  signatures: Signatures
+  /**
+   * Delegates APIs
+   */
   delegates: Delegates
+  /**
+   * Multi Signature Accounts APIs
+   */
   multiSignatures: MultiSignatures
 }
 
-export const createWrapper = (nodeAddress: string): Wrapper => {
+/**
+ * Create an API Wrapper
+ * @param nodeAddress ex https://localhost:1234 (no leading slash)
+ * @returns {{accounts: Accounts, loader: Loader, transactions: Transactions, peers: Peers, blocks: Blocks, signatures: Signatures, delegates: Delegates, multiSignatures: MultiSignatures}}
+ */
+export const createWrapper = (nodeAddress: string): APIWrapper => {
   const requester = <R>(obj: { qs?: any, path: string, method?: string, body?: any }, cback: cback<R>): Promise<R & BaseApiResponse> => {
     return request({
       url: `${nodeAddress}/api${obj.path}`,
