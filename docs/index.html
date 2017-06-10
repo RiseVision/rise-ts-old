@@ -62,23 +62,81 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="rise-node-js-sdk">Rise Node.js SDK</h1>
-				<h2 id="public-api-v2">Public Api V2</h2>
-				<p>This v2 version offers the same functionalities of V1 above except of a different and improved approach that will let you query the RISE apis easily using typescript.</p>
-				<h3 id="coding-differences-from-v1">Coding differences from V1</h3>
-				<ul>
-					<li>In V1 if the network request fails you wouldn&#39;t have been able to know it.</li>
-					<li>Like <a href="https://developers.google.com/web/fundamentals/getting-started/primers/promises">Promises</a>? In V2 you can use them!!</li>
-				</ul>
-				<h3 id="other-perks-in-v2">Other Perks in V2</h3>
-				<p>V2 was completely rewritten in <a href="https://www.typescriptlang.org/">TypeScript</a>. You <strong>don&#39;t need</strong> to know what TypeScript to leverage some of its benefits such as:</p>
-				<ul>
-					<li>Code completion: several IDEs such as IntelliJ/WebStorm, sublime and others provide code assist for typescript</li>
-					<li>Faster development: thanks to the supporting IDEs, you do not need to remember if that variable is supposed to be a number, an array, or a string. The editor will tell you that. </li>
-					<li>Less errors in your code: thanks to TypeScript your editor will be able to catch errors before running your code!</li>
-				</ul>
+				<h1 id="rise-javascript-sdk">Rise Javascript SDK</h1>
+				<p>Through this sdk you can interact with a rise node in an easy way. The library works both in the browser and Node.js.</p>
 				<h2 id="documentation">Documentation</h2>
-				<p>All available methods are available <a href="&#39;docs/&#39;">here</a></p>
+				<p>All available methods are available <a href="https://vekexasia.github.io/rise-js-sdk/modules/_index_.html">in the jsdoc</a></p>
+				<h2 id="quick-start">Quick Start</h2>
+				<h3 id="include-the-library-in-your-browser-">Include the library in your browser.</h3>
+				<p>Either download <code>dist/browser/index.js</code> or use gitcdn as follows:</p>
+				<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://gitcdn.xyz/repo/vekexasia/rise-js-sdk/master/dist/browser/index.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
+  <span class="hljs-keyword">var</span> apiWrapper = createWrapper(<span class="hljs-string">'http://example.com:5566'</span>); <span class="hljs-comment">// Set your node url here. (no leading slash)</span>
+  <span class="hljs-comment">// ...</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+</code></pre>
+				<h3 id="include-it-with-npm-suitable-also-for-webpack-browserify-">Include it with npm (Suitable also for webpack/browserify)</h3>
+				<pre><code class="lang-bash">npm i rise-js-sdk -D
+</code></pre>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> riseSDK = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rise-js-sdk'</span>);
+<span class="hljs-keyword">var</span> apiWrapper = riseSDK.createWrapper(<span class="hljs-string">'http://example.com:5566'</span>); <span class="hljs-comment">// Set your node url here. (no leading slash)</span>
+</code></pre>
+				<h2 id="compatibility">Compatibility</h2>
+				<h3 id="browser-support">Browser Support</h3>
+				<table>
+					<thead>
+						<tr>
+							<th><img src="https://raw.github.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome"></th>
+							<th><img src="https://raw.github.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox"></th>
+							<th><img src="https://raw.github.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari"></th>
+							<th><img src="https://raw.github.com/alrra/browser-logos/master/src/opera/opera_48x48.png" alt="Opera"></th>
+							<th><img src="https://raw.github.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="Edge"></th>
+							<th><img src="https://raw.github.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="IE"></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Latest ✔</td>
+							<td>Latest ✔</td>
+							<td>Latest ✔</td>
+							<td>Latest ✔</td>
+							<td>Latest ✔</td>
+							<td>8+ ✔</td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+				<p><a href="https://saucelabs.com/u/axios"><img src="https://saucelabs.com/open_sauce/build_matrix/axios.svg" alt="Browser Matrix"></a></p>
+				<h3 id="node-support">Node support</h3>
+				<p>Node &gt;= 4.x is fully supported :)</p>
+				<h2 id="examples">Examples</h2>
+				<p>All the APIs are designed to be easy to use. You can use both Callbacks or Promises; you decide.</p>
+				<p>For example you can open a new account by doing:</p>
+				<pre><code class="lang-javascript"><span class="hljs-comment">// wrapper was previously created</span>
+wrapper.accounts.open(<span class="hljs-string">'secret'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, account</span>) </span>{
+  <span class="hljs-keyword">if</span> (!error) {
+    <span class="hljs-comment">// yay!</span>
+    <span class="hljs-built_in">console</span>.log(account);
+  } <span class="hljs-keyword">else</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error: '</span>, error);
+  }
+  <span class="hljs-comment">// ...</span>
+});
+</code></pre>
+				<p>or</p>
+				<pre><code class="lang-javascript">wrapper.accounts.open(<span class="hljs-string">'secret'</span>)
+    .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">account</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(account);
+    })
+    .catch(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) </span>{
+      <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error: '</span>, error);
+    });
+</code></pre>
+				<p>which can be even shorter if you write your code in TypeScript or ES6</p>
+				<pre><code class="lang-javascript">wrapper.accounts.open(<span class="hljs-string">'secret'</span>)
+    .then(<span class="hljs-built_in">console</span>.log)
+    .catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error: '</span>, error));
+</code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
@@ -95,6 +153,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_api_blocks_.html">"api/blocks"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_api_dapps_.html">"api/dapps"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="modules/_api_delegates_.html">"api/delegates"</a>
