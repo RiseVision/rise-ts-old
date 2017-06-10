@@ -11,10 +11,10 @@ export class Accounts extends BaseApi {
    * @returns {Promise<AccountResponse>} eventual promise if you dont want to use callbacks
    */
   open(secret: string, callback?: cback<{account: Account}>) {
-    return this.requestSender({
+    return this.rs({
         path: '/accounts/open/',
         method: 'POST',
-        body: {secret}
+        data: {secret}
       },
       callback
     );
@@ -27,10 +27,10 @@ export class Accounts extends BaseApi {
    * @returns {Promise<BalanceResponse>} eventual promise if you dont want to use callbacks
    */
   getBalance(address: string, callback?: cback<{balance: string, unconfirmedBalance: string}>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/accounts/getBalance`,
-        qs: {address}
+        params: {address}
       },
       callback
     );
@@ -43,10 +43,10 @@ export class Accounts extends BaseApi {
    * @returns {Promise<PublicKeyResponse>} eventual promise if you dont want to use callbacks
    */
   getPublicKey(address: string, callback?: cback<{publicKey: string}>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/accounts/getPublicKey`,
-        qs: {address}
+        params: {address}
       },
       callback
     );
@@ -60,11 +60,11 @@ export class Accounts extends BaseApi {
    * @returns {Promise<PublicKeyResponse>} eventual promise if you dont want to use callbacks
    */
   generatePublicKey(secret: string, callback?: cback<{publicKey: string}>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/accounts/generatePublicKey`,
         method: 'POST',
-        body: {secret}
+        data: {secret}
       },
       callback
     );
@@ -77,10 +77,10 @@ export class Accounts extends BaseApi {
    * @returns {Promise<PublicKeyResponse>} eventual promise if you dont want to use callbacks
    */
   getAccount(address: string, callback?: cback<{account: Account}>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/accounts`,
-        qs: {address}
+        params: {address}
       },
       callback
     );
@@ -93,10 +93,10 @@ export class Accounts extends BaseApi {
    * @returns {Promise<PublicKeyResponse>} eventual promise if you dont want to use callbacks
    */
   getDelegates(address: string, callback?: cback<{delegates: Delegate[]}>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/accounts/delegates`,
-        qs: {address}
+        params: {address}
       },
       callback
     );
@@ -104,16 +104,16 @@ export class Accounts extends BaseApi {
 
   /**
    * Cast votes. The delegates array must use delegate Public Key prepended witha "+" or "-" sign wether you want to up/downvote the delegate
-   * @param body
+   * @param data
    * @param callback callback where to receive the result.
    * @returns {Promise<PublicKeyResponse>} eventual promise if you dont want to use callbacks
    */
-  putDelegates(body: { secret: string, publicKey: string, delegates: string[], secondSecret?: string }, callback?: cback<any>): Promise<any> {
-    return this.requestSender(
+  putDelegates(data: { secret: string, publicKey: string, delegates: string[], secondSecret?: string }, callback?: cback<any>): Promise<any> {
+    return this.rs(
       {
         path: `/accounts/delegates`,
         method: 'PUT',
-        body
+        data
       },
       callback
     );

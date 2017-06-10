@@ -5,37 +5,37 @@ import { Transaction } from './delegates';
 export class Transactions extends BaseApi {
 
   get<T>(id: string, callback?: cback<{transaction: Transaction<T>}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/transactions/get',
-      qs: {id},
+      params: {id},
     }, callback);
   }
 
   getList(query:{blockId?:string, senderId?:string, recipientId?:string, limit?:number, offset?:number, orderBy?:string} = {}, callback?: cback<{transactions: Transaction<any>[]}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/transactions',
-      qs: {...query},
+      params: {...query},
     }, callback);
   }
 
   send(conf:{secret:string, amount: number, recipientId: string, publicKey?: string, secondSecret?: string}, callback?: cback<any> ) {
-    return this.requestSender({
+    return this.rs({
       path: '/transactions',
       method: 'PUT',
-      body: {...conf}
+      data: {...conf}
     }, callback);
   }
 
   getUnconfirmedTransactions(callback?: cback<{transactions: Transaction<any>[]}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/transactions/unconfirmed'
     }, callback);
   }
 
   getUnconfirmedTransaction(id: string, callback?: cback<{transactions: Transaction<any>[]}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/transactions/unconfirmed/get',
-      qs: {id}
+      params: {id}
     }, callback);
   }
 

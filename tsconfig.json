@@ -4,7 +4,6 @@
     "module"                : "commonjs",
     "emitDecoratorMetadata" : false,
     "experimentalDecorators": true,
-    "declaration"           : true,
     "sourceMap"             : false,
     "moduleResolution"      : "node",
     "lib"                   : [
@@ -16,7 +15,7 @@
     ],
 
     "rootDir"               : "src",
-    "outDir"                : "./dist"
+    "outDir"                : "./"
   },
   "exclude"        : [
     "node_modules",

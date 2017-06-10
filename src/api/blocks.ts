@@ -5,7 +5,7 @@ import { BaseApi } from './baseApi';
 export class Blocks extends BaseApi {
 
   getFeeSchedule(callback?: cback<{ fees: { send: number, vote: number, secondsignature: number, delegate: number, multisignature: number, dapp: number } }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getFees'
       },
@@ -13,7 +13,7 @@ export class Blocks extends BaseApi {
   }
 
   getFee(callback?: cback<{ fee: number }>): Promise<BaseApiResponse & { fee: number }> {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getFee'
       },
@@ -21,7 +21,7 @@ export class Blocks extends BaseApi {
   }
 
   getReward(callback?: cback<{ reward: number }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getReward'
       },
@@ -30,7 +30,7 @@ export class Blocks extends BaseApi {
 
 
   getSupply(callback?: cback<{ supply: number }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getSupply'
       },
@@ -38,7 +38,7 @@ export class Blocks extends BaseApi {
   }
 
   getStatus(callback?: cback<BlockStatusResponse>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getStatus'
       },
@@ -46,7 +46,7 @@ export class Blocks extends BaseApi {
   }
 
   getHeight(callback?: cback<{ height: number }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getHeight'
       },
@@ -54,7 +54,7 @@ export class Blocks extends BaseApi {
   }
 
   getNethash(callback?: cback<{ nethash: string }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getNethash'
       },
@@ -62,7 +62,7 @@ export class Blocks extends BaseApi {
   }
 
   getMilestone(callback?: cback<{ milestone: number }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/getMilestone'
       },
@@ -70,19 +70,19 @@ export class Blocks extends BaseApi {
   }
 
   getBlock(id: string, callback?: cback<{ block: Block }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks/get',
-        qs: {id}
+        params: {id}
       },
       callback);
   }
 
   getBlocks(query: { [k: string]: any }, callback?: cback<{ blocks: Block[], count: number }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: '/blocks',
-        qs: {...query}
+        params: {...query}
       },
       callback);
   }

@@ -4,19 +4,19 @@ import { BaseApi } from './baseApi';
 
 export class Delegates extends BaseApi {
 
-  enable(body: { secret: string, secondSecret?: string, username: string }, callback?: cback<Transaction<{ delegate: { username: string, publicKey: string } }>>) {
-    return this.requestSender(
+  enable(data: { secret: string, secondSecret?: string, username: string }, callback?: cback<Transaction<{ delegate: { username: string, publicKey: string } }>>) {
+    return this.rs(
       {
         path: '/delegates',
         method: 'PUT',
-        body
+        data
       },
       callback
     );
   }
 
   getList(query: { limit?: number, offset?: number, orderBy?: string } = {}, callback?: cback<{ delegates: Delegate[], totalCount: number }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/delegates?${querystring.stringify(query)}`,
       },
@@ -35,7 +35,7 @@ export class Delegates extends BaseApi {
   getByKeyVal(key: keyof Delegate, value: string, callback?: cback<{ delegate: Delegate }>) {
     const query = {};
     query[key] = value;
-    return this.requestSender(
+    return this.rs(
       {
         path: `/delegates/get?${querystring.stringify(query)}`
       },
@@ -44,7 +44,7 @@ export class Delegates extends BaseApi {
   }
 
   getVoters(publicKey: string, callback?: cback<{ accounts: Account[] }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/delegates/voters?publicKey=${publicKey}`
       },
@@ -53,10 +53,10 @@ export class Delegates extends BaseApi {
   }
 
   toggleForging(obj: { secret: string, enable: boolean }, callback?: cback<{ address: string }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/delegates/forging/${obj.enable ? 'enable' : 'disable'}`,
-        body: {
+        data: {
           secret: obj.secret
         },
         method: 'POST'
@@ -66,10 +66,10 @@ export class Delegates extends BaseApi {
   }
 
   getForgedByAccount(publicKey: string, callback?: cback<{ fees: string, rewards: string, forged: string }>) {
-    return this.requestSender(
+    return this.rs(
       {
         path: `/delegates/forging/getForgedByAccount`,
-        qs: {
+        params: {
           generatorPublicKey: publicKey
         }
       },

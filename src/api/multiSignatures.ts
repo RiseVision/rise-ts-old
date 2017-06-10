@@ -3,9 +3,9 @@ import { cback } from './response';
 
 export class MultiSignatures extends BaseApi {
   getPending(publicKey: string, callback?: cback<any>) {
-    return this.requestSender({
+    return this.rs({
       path: '/multisignatures/pending',
-      qs: {
+      params: {
         publicKey
       },
       method: 'GET'
@@ -13,10 +13,10 @@ export class MultiSignatures extends BaseApi {
   }
 
   createMultiSigAccount(sig: { secret: string, lifetime: number, min: number, publicKeys: string[] }, callback?: cback<any>) {
-    return this.requestSender({
+    return this.rs({
       path: '/multisignatures',
       method: 'PUT',
-      body: {
+      data: {
         secret: sig.secret,
         lifetime: sig.lifetime, // hours in integer
         min: sig.min, // min signatures need to approve
@@ -26,10 +26,10 @@ export class MultiSignatures extends BaseApi {
   }
 
   sign(obj: { secret: string, publicKey: string, transactionId: string }, callback?: cback<any>) {
-    return this.requestSender({
+    return this.rs({
       path: '/multisignatures/sign',
       method: 'POST',
-      body: {
+      data: {
         secret: obj.secret,
         publicKey: obj.publicKey,
         transactionId: obj.transactionId
@@ -38,9 +38,9 @@ export class MultiSignatures extends BaseApi {
   }
 
   getAccounts(publicKey: string, callback?: cback<any>) {
-    return this.requestSender({
+    return this.rs({
       path: '/multisignatures/accounts',
-      qs: {publicKey},
+      params: {publicKey},
       method: 'GET'
     }, callback);
   }

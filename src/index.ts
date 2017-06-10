@@ -1,5 +1,5 @@
 import { BaseApiResponse, cback } from './api/response';
-import * as request from 'request-promise';
+import axios from 'axios';
 import { Accounts } from './api/accounts';
 import { Loader } from './api/loader';
 import { Transactions } from './api/transactions';
@@ -50,17 +50,17 @@ export interface APIWrapper {
  * @returns {{accounts: Accounts, loader: Loader, transactions: Transactions, peers: Peers, blocks: Blocks, signatures: Signatures, delegates: Delegates, multiSignatures: MultiSignatures}}
  */
 export const createWrapper = (nodeAddress: string): APIWrapper => {
-  const requester = <R>(obj: { qs?: any, path: string, method?: string, body?: any }, cback: cback<R>): Promise<R & BaseApiResponse> => {
-    return request({
+  const requester = <R>(obj: { params?: any, path: string, method?: string, data?: any }, cback: cback<R>): Promise<R & BaseApiResponse> => {
+    return axios({
       url: `${nodeAddress}/api${obj.path}`,
       json: true,
       ...obj
     })
       .then(resp => {
-        if (resp.success == false) {
-          return Promise.reject(resp.error);
+        if (resp.data.status == false) {
+          return Promise.reject(resp.data.error);
         }
-        return resp;
+        return resp.data;
       })
       .then(a => {
         if (typeof(cback) !== 'undefined') {

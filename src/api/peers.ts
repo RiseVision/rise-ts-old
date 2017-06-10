@@ -3,22 +3,22 @@ import { BaseApiResponse, cback } from './response';
 
 export class Peers extends BaseApi {
   getList(query:{state?:string, os?:string, version?:string, limit?:number, offset?:number, orderBy?:string} = {}, callback?: cback<{peers: Peer[]}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/peers',
-      qs: {...query},
+      params: {...query},
     }, callback);
   }
 
   getByIPPort(params: {ip:string, port: number}, callback?: cback<{peer: Peer}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/peers/get',
-      qs: {...params},
+      params: {...params},
 
     }, callback);
   }
 
   version( callback?: cback<{build: string, commit: string, version: string, minVersion: string}>) {
-    return this.requestSender({
+    return this.rs({
       path: '/peers/version',
     }, callback);
   }
