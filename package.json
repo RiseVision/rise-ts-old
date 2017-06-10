@@ -12,7 +12,7 @@
   "scripts": {
     "package": "shx rm -rf ./dist/; tsc --outDir dist/es5 --target es5 -d && webpack",
     "prepublish": "shx rm -rf ./dist/ && npm run package",
-    "docs": "rm docs -rf; typedoc  -excludeNotExported --excludePrivate --stripInternal --disableOutputCheck --hideGenerator --module umd --mode modules --tsconfig ./tsconfig.json  --out docs/ src/; touch docs/.nojekyll "
+    "docs": "shx rm docs -rf; typedoc  -excludeNotExported --excludePrivate --stripInternal --disableOutputCheck --hideGenerator --module umd --mode modules --tsconfig ./tsconfig.json  --out docs/ src/; touch docs/.nojekyll "
   },
   "keywords": [
     "rise",
@@ -27,7 +27,7 @@
     "altcoin"
   ],
   "bugs": {
-    "url": "https://github.com/RiseVision/Rise-SDK-NodeJS/issues"
+    "url": "https://github.com/vekexasia/rise-js-sdk/issues"
   },
   "license": "MIT",
   "readmeFilename": "README.md",
