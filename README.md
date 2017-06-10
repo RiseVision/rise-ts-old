@@ -15,4 +15,6 @@ V2 was completely rewritten in [TypeScript](https://www.typescriptlang.org/). Yo
 - Faster development: thanks to the supporting IDEs, you do not need to remember if that variable is supposed to be a number, an array, or a string. The editor will tell you that. 
 - Less errors in your code: thanks to TypeScript your editor will be able to catch errors before running your code!
 
-Also, every method have been commented and annotaded with JsDoc notations to ease your development even more.
+## Documentation
+
+All available methods are available [here]('docs/')

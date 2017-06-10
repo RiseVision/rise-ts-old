@@ -2,14 +2,15 @@
   "name": "risesdk",
   "version": "0.7.3",
   "description": "Rise SDK built in Node.js",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/es5/index.js",
+  "browser": "dist/browser/index.js",
+  "types": "dist/es5/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/RiseVision/Rise-SDK-NodeJS"
+    "url": "https://github.com/vekexasia/rise-js-sdk"
   },
   "scripts": {
-    "package": "shx rm -rf ./dist/; tsc --outDir dist/es5 --target es5 && webpack",
+    "package": "shx rm -rf ./dist/; tsc --outDir dist/es5 --target es5 -d && webpack",
     "prepublish": "shx rm -rf ./dist/ && npm run package",
     "docs": "rm docs -rf; typedoc  -excludeNotExported --excludePrivate --stripInternal --disableOutputCheck --hideGenerator --module umd --mode modules --tsconfig ./tsconfig.json  --out docs/ src/ "
   },
