@@ -15,7 +15,7 @@ Either download `dist/browser/index.js` or use gitcdn as follows:
 ```html
 <script type="text/javascript" src="https://gitcdn.xyz/repo/vekexasia/rise-js-sdk/master/dist/browser/index.js"></script>
 <script>
-  var apiWrapper = rise.nodeAddress = 'http://example.com:5566'; // Set your node url here. (no leading slash)
+  rise.nodeAddress = 'http://example.com:5566'; // Set your node url here. (no leading slash)
   // ...
 </script>
 
@@ -29,7 +29,7 @@ npm i rise-js-sdk -D
 
 ```javascript
 var rise = require('rise-js-sdk').rise;
-var apiWrapper = rise.nodeAddress= 'http://example.com:5566'; // Set your node url here. (no leading slash) 
+rise.nodeAddress= 'http://example.com:5566'; // Set your node url here. (no leading slash) 
 
 ```
 
