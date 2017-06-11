@@ -3,7 +3,6 @@
   "version": "0.7.3",
   "description": "Rise SDK built in Node.js",
   "main": "dist/es5/index.js",
-  "browser": "dist/browser/index.js",
   "types": "dist/es5/index.d.ts",
   "repository": {
     "type": "git",
@@ -12,7 +11,7 @@
   "scripts": {
     "package": "shx rm -rf ./dist/; tsc --outDir dist/es5 --target es5 -d && webpack",
     "prepublish": "shx rm -rf ./dist/ && npm run package",
-    "docs": "shx rm -rf docs ; typedoc --theme ./doc-theme -excludeNotExported --excludePrivate --stripInternal --disableOutputCheck --hideGenerator --module umd --mode modules --tsconfig ./tsconfig.json  --out docs/ src/; touch docs/.nojekyll "
+    "docs": "shx rm -rf docs ; typedoc -exclude \"**/apis/**\" --theme ./doc-stuff/doc-theme -excludeNotExported --excludePrivate --disableOutputCheck --hideGenerator --module commonjs --mode file --tsconfig ./tsconfig.json  --out docs/ src/; touch docs/.nojekyll "
   },
   "keywords": [
     "rise",
@@ -42,12 +41,16 @@
     "@types/sinon": "^2.3.1",
     "assert": "1.4.1",
     "chai": "^4.0.2",
+    "gulp": "^3.9.1",
     "mocha": "^3.4.2",
+    "pug": "^2.0.0-rc.2",
     "shx": "^0.2.2",
     "sinon": "^2.3.2",
     "ts-loader": "^2.1.0",
     "ts-node": "^3.0.6",
+    "tslib": "^1.7.1",
     "typedoc": "^0.7.1",
+    "typedoc-plugin-internal-external": "^1.0.9",
     "typescript": "^2.3.4",
     "uglifyjs-webpack-plugin": "^0.4.3",
     "webpack": "^2.6.1"

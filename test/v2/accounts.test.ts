@@ -1,4 +1,4 @@
-import { Accounts } from '../../src/api/accounts';
+import { accounts } from '../../src/apis/accounts';
 import * as sinon from 'sinon';
 import { expect } from 'chai';
 import { apiBasicChecker } from './testutils';
@@ -7,7 +7,7 @@ describe('Accounts', () => {
 
   it('.open should propagate given params', () => {
     const spy = sinon.spy();
-    new Accounts(spy).open('secret');
+    accounts(spy).open('secret');
     apiBasicChecker(spy, '/accounts/open/', undefined);
     expect(spy.firstCall.args[0].method).is.eq('POST');
     expect(spy.firstCall.args[0].data).is.not.undefined;
@@ -16,14 +16,14 @@ describe('Accounts', () => {
 
   it('.getBalance should propagate given params and construct url correcly', () => {
     const spy = sinon.spy();
-    new Accounts(spy).getBalance('address');
+    accounts(spy).getBalance('address');
     apiBasicChecker(spy, '/accounts/getBalance', undefined);
     expect(spy.firstCall.args[0].params).to.be.deep.eq({address: 'address'})
   });
 
   it('.getPublicKey should propagate given params and construct url correcly', () => {
     const spy = sinon.spy();
-    new Accounts(spy).getPublicKey('address');
+    accounts(spy).getPublicKey('address');
     apiBasicChecker(spy, '/accounts/getPublicKey', undefined);
     expect(spy.firstCall.args[0].params).to.be.deep.eq({address: 'address'})
 
@@ -31,7 +31,7 @@ describe('Accounts', () => {
 
   it('.generatePublicKey should propagate given params in POST', () => {
     const spy = sinon.spy();
-    new Accounts(spy).generatePublicKey('secret');
+    accounts(spy).generatePublicKey('secret');
     apiBasicChecker(spy, '/accounts/generatePublicKey', undefined);
     expect(spy.firstCall.args[0].method).is.eq('POST');
     expect(spy.firstCall.args[0].data).is.not.undefined;
@@ -40,7 +40,7 @@ describe('Accounts', () => {
 
   it('.getAccount should propagate given params and construct url correctly', () => {
     const spy = sinon.spy();
-    new Accounts(spy).getAccount('address');
+    accounts(spy).getAccount('address');
     apiBasicChecker(spy, '/accounts', undefined);
     expect(spy.firstCall.args[0].params).to.be.deep.eq({address: 'address'});
 
@@ -48,7 +48,7 @@ describe('Accounts', () => {
 
   it('.getDelegates should propagate given params and construct url correctly', () => {
     const spy = sinon.spy();
-    new Accounts(spy).getDelegates('address');
+    accounts(spy).getDelegates('address');
     apiBasicChecker(spy, '/accounts/delegates', undefined);
     expect(spy.firstCall.args[0].params).to.be.deep.eq({address: 'address'});
 
@@ -61,7 +61,7 @@ describe('Accounts', () => {
       publicKey: 'public',
       delegates: ['+DELEGATE1', '-DELEGATE2']
     };
-    new Accounts(spy).putDelegates(body);
+    accounts(spy).putDelegates(body);
     apiBasicChecker(spy, '/accounts/delegates', undefined);
     expect(spy.firstCall.args[0].method).is.eq('PUT');
     expect(spy.firstCall.args[0].data).is.deep.eq(body);
