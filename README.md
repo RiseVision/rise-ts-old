@@ -4,7 +4,7 @@ Through this sdk you can interact with a rise node in an easy way. The library w
 
 ## Documentation
 
-All available methods are available [in the jsdoc](https://vekexasia.github.io/rise-js-sdk/modules/_index_.html)
+All available methods are available [in the jsdoc](https://vekexasia.github.io/rise-js-sdk/interfaces/rise.html)
 
 ## Quick Start
 
@@ -15,7 +15,7 @@ Either download `dist/browser/index.js` or use gitcdn as follows:
 ```html
 <script type="text/javascript" src="https://gitcdn.xyz/repo/vekexasia/rise-js-sdk/master/dist/browser/index.js"></script>
 <script>
-  var apiWrapper = createWrapper('http://example.com:5566'); // Set your node url here. (no leading slash)
+  var apiWrapper = rise.nodeAddress = 'http://example.com:5566'; // Set your node url here. (no leading slash)
   // ...
 </script>
 
@@ -28,8 +28,8 @@ npm i rise-js-sdk -D
 ```
 
 ```javascript
-var riseSDK = require('rise-js-sdk');
-var apiWrapper = riseSDK.createWrapper('http://example.com:5566'); // Set your node url here. (no leading slash) 
+var rise = require('rise-js-sdk').rise;
+var apiWrapper = rise.nodeAddress= 'http://example.com:5566'; // Set your node url here. (no leading slash) 
 
 ```
 
@@ -56,8 +56,7 @@ All the APIs are designed to be easy to use. You can use both Callbacks or Promi
 For example you can open a new account by doing:
 
 ```javascript
-// wrapper was previously created
-wrapper.accounts.open('secret', function(error, account) {
+rise.accounts.open('secret', function(error, account) {
   if (!error) {
     // yay!
     console.log(account);
@@ -71,7 +70,7 @@ wrapper.accounts.open('secret', function(error, account) {
 or
 
 ```javascript
-wrapper.accounts.open('secret')
+rise.accounts.open('secret')
     .then(function (account) {
       console.log(account);
     })
@@ -83,8 +82,22 @@ wrapper.accounts.open('secret')
 which can be even shorter if you write your code in TypeScript or ES6
 
 ```javascript
-wrapper.accounts.open('secret')
+rise.accounts.open('secret')
     .then(console.log)
     .catch(error => console.log('error: ', error));
+```
+
+
+## Advanced Usage
+
+In some cases you need to connect to multiple nodes.
+
+To do so, just use the [newWrapper](https://vekexasia.github.io/rise-js-sdk/interfaces/rise.html#newwrapper) method:
+
+```javascript
+var node1 = rise.newWrapper('http://node1:1234');
+var node2 = rise.newWrapper('http://node2:1234');
+
+// interact with node1 & node2 using the same APIs available within 'rise' variable.
 ```
 
