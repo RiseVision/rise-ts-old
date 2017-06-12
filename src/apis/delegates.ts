@@ -83,5 +83,14 @@ export const delegates = (rs: rs): Delegates => ({
       },
       callback
     )
+  },
+
+  getNextForgers(callback?: cback<{currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[]}>) {
+    return rs(
+      {
+        path: `/delegates/getNextForgers`
+      },
+      callback
+    )
   }
 });

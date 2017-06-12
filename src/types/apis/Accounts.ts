@@ -1,4 +1,3 @@
-
 import { BaseApiResponse, cback } from '../base';
 import { Delegate } from '../responses';
 
@@ -9,21 +8,21 @@ export interface Accounts {
    * @param callback callback where to receive the result.
    * @internal
    */
-  open<T = { account: Account }>(secret:string, callback?: cback<T>): Promise<T & BaseApiResponse>
+  open(secret: string, callback?: cback<{ account: Account }>): Promise<{ account: Account } & BaseApiResponse>
 
   /**
    * Returns balance and unconfirmed balance for the specified address!
    * @param address address to check
    * @param callback callback where to receive the result.
    */
-  getBalance<T = {balance: string, unconfirmedBalance: string}>(address: string, callback?: cback<T>): Promise<T & BaseApiResponse>
+  getBalance(address: string, callback?: cback<{ balance: string, unconfirmedBalance: string }>): Promise<{ balance: string, unconfirmedBalance: string } & BaseApiResponse>
 
   /**
    * Returns the address public key
    * @param address
    * @param callback callback where to receive the result.
    */
-  getPublicKey(address: string, callback?: cback<{publicKey: string}>)
+  getPublicKey(address: string, callback?: cback<{ publicKey: string }>): Promise<{ publicKey: string } & BaseApiResponse>
 
 
   /**
@@ -31,7 +30,7 @@ export interface Accounts {
    * @param secret the secret to use
    * @param callback callback where to receive the result.
    */
-  generatePublicKey(secret: string, callback?: cback<{publicKey: string}>);
+  generatePublicKey(secret: string, callback?: cback<{ publicKey: string }>): Promise<{ publicKey: string } & BaseApiResponse>
 
 
   /**
@@ -39,20 +38,21 @@ export interface Accounts {
    * @param address
    * @param callback callback where to receive the result.
    */
-  getAccount(address: string, callback?: cback<{account: Account}>)
+  getAccount(address: string, callback?: cback<{ account: Account }>): Promise<{ account: Account } & BaseApiResponse>
 
   /**
    * Return accounts delegates by using the given address
    * @param address
    * @param callback callback where to receive the result.
    */
-  getDelegates(address: string, callback?: cback<{delegates: Delegate[]}>)
+  getDelegates(address: string, callback?: cback<{ delegates: Delegate[] }>): Promise<{ delegates: Delegate[] } & BaseApiResponse>
+
   /**
    * Cast votes. The delegates array must use delegate Public Key prepended witha "+" or "-" sign wether you want to up/downvote the delegate
    * @param data
    * @param callback callback where to receive the result.
    */
-  putDelegates(data: { secret: string, publicKey: string, delegates: string[], secondSecret?: string }, callback?: cback<any>)
+  putDelegates(data: { secret: string, publicKey: string, delegates: string[], secondSecret?: string }, callback?: cback<any>): Promise<any>
 }
 
 

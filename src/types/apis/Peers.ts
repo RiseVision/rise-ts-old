@@ -1,10 +1,10 @@
-import { cback } from '../base';
+import { BaseApiResponse, cback } from '../base';
 import { Peer } from '../responses';
 
 export interface Peers {
-  getList(query: { state?: string, os?: string, version?: string, limit?: number, offset?: number, orderBy?: string }, callback?: cback<{ peers: Peer[] }>)
+  getList(query: { state?: string, os?: string, version?: string, limit?: number, offset?: number, orderBy?: string }, callback?: cback<{ peers: Peer[] }>): Promise<{ peers: Peer[] } & BaseApiResponse>
 
-  getByIPPort(params: { ip: string, port: number }, callback?: cback<{ peer: Peer }>)
+  getByIPPort(params: { ip: string, port: number }, callback?: cback<{ peer: Peer }>): Promise<{ peer: Peer } & BaseApiResponse>
 
-  version(callback?: cback<{ build: string, commit: string, version: string, minVersion: string }>)
+  version(callback?: cback<{ build: string, commit: string, version: string, minVersion: string }>): Promise<{ build: string, commit: string, version: string, minVersion: string } & BaseApiResponse>
 }

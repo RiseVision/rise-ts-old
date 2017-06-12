@@ -65,21 +65,21 @@
 				<h1 id="rise-javascript-sdk">Rise Javascript SDK</h1>
 				<p>Through this sdk you can interact with a rise node in an easy way. The library works both in the browser and Node.js.</p>
 				<h2 id="documentation">Documentation</h2>
-				<p>All available methods are available <a href="https://vekexasia.github.io/rise-js-sdk/modules/_index_.html">in the jsdoc</a></p>
+				<p>All available methods are available <a href="https://vekexasia.github.io/rise-js-sdk/interfaces/rise.html">in the jsdoc</a></p>
 				<h2 id="quick-start">Quick Start</h2>
 				<h3 id="include-the-library-in-your-browser-">Include the library in your browser.</h3>
 				<p>Either download <code>dist/browser/index.js</code> or use gitcdn as follows:</p>
 				<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://gitcdn.xyz/repo/vekexasia/rise-js-sdk/master/dist/browser/index.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="actionscript">
-  <span class="hljs-keyword">var</span> apiWrapper = createWrapper(<span class="hljs-string">'http://example.com:5566'</span>); <span class="hljs-comment">// Set your node url here. (no leading slash)</span>
+  rise.nodeAddress = <span class="hljs-string">'http://example.com:5566'</span>; <span class="hljs-comment">// Set your node url here. (no leading slash)</span>
   <span class="hljs-comment">// ...</span>
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
 				<h3 id="include-it-with-npm-suitable-also-for-webpack-browserify-">Include it with npm (Suitable also for webpack/browserify)</h3>
 				<pre><code class="lang-bash">npm i rise-js-sdk -D
 </code></pre>
-				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> riseSDK = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rise-js-sdk'</span>);
-<span class="hljs-keyword">var</span> apiWrapper = riseSDK.createWrapper(<span class="hljs-string">'http://example.com:5566'</span>); <span class="hljs-comment">// Set your node url here. (no leading slash)</span>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> rise = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rise-js-sdk'</span>).rise;
+rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <span class="hljs-comment">// Set your node url here. (no leading slash)</span>
 </code></pre>
 				<h2 id="compatibility">Compatibility</h2>
 				<h3 id="browser-support">Browser Support</h3>
@@ -112,8 +112,7 @@
 				<h2 id="examples">Examples</h2>
 				<p>All the APIs are designed to be easy to use. You can use both Callbacks or Promises; you decide.</p>
 				<p>For example you can open a new account by doing:</p>
-				<pre><code class="lang-javascript"><span class="hljs-comment">// wrapper was previously created</span>
-wrapper.accounts.open(<span class="hljs-string">'secret'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, account</span>) </span>{
+				<pre><code class="lang-javascript">rise.accounts.open(<span class="hljs-string">'secret'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">error, account</span>) </span>{
   <span class="hljs-keyword">if</span> (!error) {
     <span class="hljs-comment">// yay!</span>
     <span class="hljs-built_in">console</span>.log(account);
@@ -124,7 +123,7 @@ wrapper.accounts.open(<span class="hljs-string">'secret'</span>, <span class="hl
 });
 </code></pre>
 				<p>or</p>
-				<pre><code class="lang-javascript">wrapper.accounts.open(<span class="hljs-string">'secret'</span>)
+				<pre><code class="lang-javascript">rise.accounts.open(<span class="hljs-string">'secret'</span>)
     .then(<span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">account</span>) </span>{
       <span class="hljs-built_in">console</span>.log(account);
     })
@@ -133,9 +132,17 @@ wrapper.accounts.open(<span class="hljs-string">'secret'</span>, <span class="hl
     });
 </code></pre>
 				<p>which can be even shorter if you write your code in TypeScript or ES6</p>
-				<pre><code class="lang-javascript">wrapper.accounts.open(<span class="hljs-string">'secret'</span>)
+				<pre><code class="lang-javascript">rise.accounts.open(<span class="hljs-string">'secret'</span>)
     .then(<span class="hljs-built_in">console</span>.log)
     .catch(<span class="hljs-function"><span class="hljs-params">error</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'error: '</span>, error));
+</code></pre>
+				<h2 id="advanced-usage">Advanced Usage</h2>
+				<p>In some cases you need to connect to multiple nodes.</p>
+				<p>To do so, just use the <a href="https://vekexasia.github.io/rise-js-sdk/interfaces/rise.html#newwrapper">newWrapper</a> method:</p>
+				<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> node1 = rise.newWrapper(<span class="hljs-string">'http://node1:1234'</span>);
+<span class="hljs-keyword">var</span> node2 = rise.newWrapper(<span class="hljs-string">'http://node2:1234'</span>);
+
+<span class="hljs-comment">// interact with node1 &amp; node2 using the same APIs available within 'rise' variable.</span>
 </code></pre>
 			</div>
 		</div>

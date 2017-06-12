@@ -1,26 +1,25 @@
-import { cback } from '../base';
+import { BaseApiResponse, cback } from '../base';
 import { Block, BlockStatusResponse } from '../responses';
 
 export interface Blocks {
 
   getFeeSchedule(callback?: cback<{ fees: { send: number, vote: number, secondsignature: number, delegate: number, multisignature: number, dapp: number } }>)
 
-  getFee(callback?: cback<{ fee: number }>)
+  getFee(callback?: cback<{ fee: number }>): Promise<{ fee: number } & BaseApiResponse>
 
-  getReward(callback?: cback<{ reward: number }>)
+  getReward(callback?: cback<{ reward: number }>): Promise<{ reward: number } & BaseApiResponse>
 
+  getSupply(callback?: cback<{ supply: number }>): Promise<{ supply: number } & BaseApiResponse>
 
-  getSupply(callback?: cback<{ supply: number }>)
+  getStatus(callback?: cback<BlockStatusResponse>): Promise<BlockStatusResponse & BaseApiResponse>
 
-  getStatus(callback?: cback<BlockStatusResponse>)
+  getHeight(callback?: cback<{ height: number }>): Promise<{ height: number } & BaseApiResponse>
 
-  getHeight(callback?: cback<{ height: number }>)
+  getNethash(callback?: cback<{ nethash: string }>): Promise<{ nethash: string } & BaseApiResponse>
 
-  getNethash(callback?: cback<{ nethash: string }>)
+  getMilestone(callback?: cback<{ milestone: number }>): Promise<{ milestone: number } & BaseApiResponse>
 
-  getMilestone(callback?: cback<{ milestone: number }>)
+  getBlock(id: string, callback?: cback<{ block: Block }>): Promise<{ block: Block } & BaseApiResponse>
 
-  getBlock(id: string, callback?: cback<{ block: Block }>)
-
-  getBlocks(query: { [k: string]: any }, callback?: cback<{ blocks: Block[], count: number }>)
+  getBlocks(query: { [k: string]: any }, callback?: cback<{ blocks: Block[], count: number }>): Promise<{ blocks: Block[], count: number } & BaseApiResponse>
 }
