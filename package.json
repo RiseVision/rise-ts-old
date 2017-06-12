@@ -11,7 +11,7 @@
   "scripts": {
     "package": "shx rm -rf ./dist/; tsc --outDir dist/es5 --target es5 -d && webpack",
     "prepublish": "shx rm -rf ./dist/ && npm run package",
-    "docs": "shx rm -rf docs ; typedoc -exclude \"**/apis/**\" --theme ./doc-stuff/doc-theme -excludeNotExported --excludePrivate --disableOutputCheck --hideGenerator --module commonjs --mode file --tsconfig ./tsconfig.json  --out docs/ src/; touch docs/.nojekyll "
+    "docs": "shx rm -rf docs ; typedoc -exclude \"**/apis/**\" --theme node_modules/typedoc-clarity-theme/bin -excludeNotExported --excludePrivate --disableOutputCheck --hideGenerator --module commonjs --mode file --tsconfig ./tsconfig.json  --out docs/ src/; touch docs/.nojekyll "
   },
   "keywords": [
     "rise",
@@ -50,6 +50,7 @@
     "ts-node": "^3.0.6",
     "tslib": "^1.7.1",
     "typedoc": "^0.7.1",
+    "typedoc-clarity-theme": "^1.1.0",
     "typedoc-plugin-internal-external": "^1.0.9",
     "typescript": "^2.3.4",
     "uglifyjs-webpack-plugin": "^0.4.3",
