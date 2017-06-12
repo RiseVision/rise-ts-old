@@ -2,13 +2,13 @@
 import {  cback } from '../types/base';
 import { rs } from '../types/base';
 import { Delegate } from '../types/responses';
-import { Accounts } from '../types/apis/Accounts';
+import { AccountsAPI } from '../types/apis/AccountsAPI';
 
 /**
  * @private
  * @internal
  */
-export const accounts = (rs:rs): Accounts => ({
+export const accounts = (rs:rs): AccountsAPI => ({
 
 
   open(secret: string, callback?: cback<{account: Account}>) {

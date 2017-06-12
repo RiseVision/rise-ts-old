@@ -1,7 +1,7 @@
 import { Transaction } from '../responses';
 import { BaseApiResponse, cback } from '../base';
 
-export interface Transactions {
+export interface TransactionsAPI {
 
   get<T>(id: string, callback?: cback<{ transaction: Transaction<T> }>): Promise<{ transaction: Transaction<T> } & BaseApiResponse>
 

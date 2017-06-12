@@ -1,11 +1,11 @@
 import { cback, rs } from '../types/base';
 import { Transaction } from '../types/responses';
-import { Transactions } from '../types/apis/Transactions';
+import { TransactionsAPI } from '../types/apis/TransactionsAPI';
 /**
  * @private
  * @internal
  */
-export const transactions = (rs: rs): Transactions => ({
+export const transactions = (rs: rs): TransactionsAPI => ({
 
   get<T>(id: string, callback?: cback<{ transaction: Transaction<T> }>) {
     return rs({

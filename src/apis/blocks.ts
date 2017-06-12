@@ -1,12 +1,12 @@
 import { cback, rs } from '../types/base';
 import { Block, BlockStatusResponse } from '../types/responses';
-import { Blocks } from '../types/apis/Blocks';
+import { BlocksAPI } from '../types/apis/BlocksAPI';
 
 /**
  * @private
  * @internal
  */
-export const blocks = (rs: rs): Blocks => ({
+export const blocks = (rs: rs): BlocksAPI => ({
 
   getFeeSchedule(callback?: cback<{ fees: { send: number, vote: number, secondsignature: number, delegate: number, multisignature: number, dapp: number } }>) {
     return rs(

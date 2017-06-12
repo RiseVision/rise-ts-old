@@ -1,11 +1,11 @@
 import { cback, rs } from '../types/base';
 import { Delegate, Transaction } from '../types/responses';
-import { Delegates } from '../types/apis/Delegates';
+import { DelegatesAPI } from '../types/apis/DelegatesAPI';
 /**
  * @private
  * @internal
  */
-export const delegates = (rs: rs): Delegates => ({
+export const delegates = (rs: rs): DelegatesAPI => ({
 
   enable(data: { secret: string, secondSecret?: string, username: string }, callback?: cback<Transaction<{ delegate: { username: string, publicKey: string } }>>) {
     return rs(

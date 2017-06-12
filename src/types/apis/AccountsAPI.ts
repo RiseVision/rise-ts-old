@@ -1,7 +1,7 @@
 import { BaseApiResponse, cback } from '../base';
 import { Delegate } from '../responses';
 
-export interface Accounts {
+export interface AccountsAPI {
   /**
    * Opens a new account using the specified secrect string
    * @param secret the string to use to generate the new account

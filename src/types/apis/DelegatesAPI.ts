@@ -1,7 +1,7 @@
 import { BaseApiResponse, cback } from '../base';
 import { Delegate, Transaction } from '../responses';
 
-export interface Delegates {
+export interface DelegatesAPI {
   enable(data: { secret: string, secondSecret?: string, username: string }, callback?: cback<Transaction<{ delegate: { username: string, publicKey: string } }>>): Promise<Transaction<{ delegate: { username: string, publicKey: string } }> & BaseApiResponse>
 
   getList(query: { limit?: number, offset?: number, orderBy?: string }, callback?: cback<{ delegates: Delegate[], totalCount: number }>): Promise<{ delegates: Delegate[], totalCount: number } & BaseApiResponse>

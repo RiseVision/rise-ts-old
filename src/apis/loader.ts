@@ -1,10 +1,10 @@
 import { cback, rs } from '../types/base';
-import { Loader } from '../types/apis/Loader';
+import { LoaderAPI } from '../types/apis/LoaderAPI';
 /**
  * @private
  * @internal
  */
-export const loader = (rs: rs): Loader => ({
+export const loader = (rs: rs): LoaderAPI => ({
 
   status(callback?: cback<{ loaded: boolean, now: number, blocksCount: number }>) {
     return rs({

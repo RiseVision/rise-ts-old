@@ -1,6 +1,6 @@
 import { BaseApiResponse, cback } from '../base';
 
-export interface Loader {
+export interface LoaderAPI {
 
   status(callback?: cback<{ loaded: boolean, now: number, blocksCount: number }>): Promise<{ loaded: boolean, now: number, blocksCount: number } & BaseApiResponse>
 

@@ -1,14 +1,14 @@
 import axios from 'axios';
 import {
-  Accounts,
-  Blocks,
-  Dapps,
-  Delegates,
-  Loader,
-  MultiSignatures,
-  Peers,
-  Signatures,
-  Transactions
+  AccountsAPI,
+  BlocksAPI,
+  DappsAPI,
+  DelegatesAPI,
+  LoaderAPI,
+  MultiSignaturesAPI,
+  PeersAPI,
+  SignaturesAPI,
+  TransactionsAPI
 } from './types/apis/';
 import {
   accounts,
@@ -41,40 +41,40 @@ export interface APIWrapper {
   /**
    * Accounts APIs
    */
-  accounts: Accounts
+  accounts: AccountsAPI
   /**
    * Blocks Query APIs
    */
-  blocks: Blocks
+  blocks: BlocksAPI
   /**
    * Node loading status APIs
    */
-  loader: Loader
+  loader: LoaderAPI
   /**
    * Transactions APIs
    */
-  transactions: Transactions
+  transactions: TransactionsAPI
   /**
    * Peers APIs
    */
-  peers: Peers
+  peers: PeersAPI
   /**
    * Signature APIs
    */
-  signatures: Signatures
+  signatures: SignaturesAPI
   /**
    * Delegates APIs
    */
-  delegates: Delegates
+  delegates: DelegatesAPI
   /**
    * Multi Signature Accounts APIs
    */
-  multiSignatures: MultiSignatures
+  multiSignatures: MultiSignaturesAPI
 
   /**
    * Decentralized Apps APIs (in progress)
    */
-  dapps: Dapps
+  dapps: DappsAPI
 }
 
 const requester = (nodeAddress) => <R>(obj: { params?: any, path: string, method?: string, data?: any }, cback: cback<R>): Promise<R & BaseApiResponse> => {

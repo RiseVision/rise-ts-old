@@ -1,10 +1,10 @@
 import { cback, rs } from '../types/base';
-import { MultiSignatures } from '../types/apis/MultiSignatures';
+import { MultiSignaturesAPI } from '../types/apis/MultiSignaturesAPI';
 /**
  * @private
  * @internal
  */
-export const multiSignatures = (rs: rs): MultiSignatures => ({
+export const multiSignatures = (rs: rs): MultiSignaturesAPI => ({
   getPending(publicKey: string, callback?: cback<any>) {
     return rs({
       path: '/multisignatures/pending',

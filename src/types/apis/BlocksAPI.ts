@@ -1,7 +1,7 @@
 import { BaseApiResponse, cback } from '../base';
 import { Block, BlockStatusResponse } from '../responses';
 
-export interface Blocks {
+export interface BlocksAPI {
 
   getFeeSchedule(callback?: cback<{ fees: { send: number, vote: number, secondsignature: number, delegate: number, multisignature: number, dapp: number } }>)
 

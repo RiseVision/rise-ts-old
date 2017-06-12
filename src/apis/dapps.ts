@@ -1,11 +1,11 @@
 import { cback, rs } from '../types/base';
-import { Dapps } from '../types/apis/Dapps';
+import { DappsAPI } from '../types/apis/DappsAPI';
 
 /**
  * @private
  * @internal
  */
-export const dapps = (rs: rs): Dapps => ({
+export const dapps = (rs: rs): DappsAPI => ({
 
   getCategories(callback?: cback<{ categories: { [k: string]: number } }>) {
     return rs({
