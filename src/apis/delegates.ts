@@ -85,6 +85,18 @@ export const delegates = (rs: rs): DelegatesAPI => ({
     )
   },
 
+  getForgingStatus(publicKey?:string, callback?: cback<{enabled:boolean}>){
+    return rs(
+      {
+        path: `/delegates/forging/status`,
+        params: {
+          publicKey: publicKey
+        }
+      },
+      callback
+    );
+  },
+
   getNextForgers(callback?: cback<{currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[]}>) {
     return rs(
       {
