@@ -1,46 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74eb3afd-959d-45df-a9ed-372f7b7cdc19" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/accounts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/blocks.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/dapps.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/delegates.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/loader.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/multisignatures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/peers.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/signatures.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/docs/interfaces/transactions.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Accounts.ts" afterPath="$PROJECT_DIR$/src/types/apis/AccountsAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Blocks.ts" afterPath="$PROJECT_DIR$/src/types/apis/BlocksAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Dapps.ts" afterPath="$PROJECT_DIR$/src/types/apis/DappsAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Delegates.ts" afterPath="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Loader.ts" afterPath="$PROJECT_DIR$/src/types/apis/LoaderAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/MultiSignatures.ts" afterPath="$PROJECT_DIR$/src/types/apis/MultiSignaturesAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Peers.ts" afterPath="$PROJECT_DIR$/src/types/apis/PeersAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Signatures.ts" afterPath="$PROJECT_DIR$/src/types/apis/SignaturesAPI.ts" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/apis/Transactions.ts" afterPath="$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts" />
+    <list default="true" id="74eb3afd-959d-45df-a9ed-372f7b7cdc19" name="Default" comment="fixed">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/browser/index.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/assets/js/search.js" afterPath="$PROJECT_DIR$/docs/assets/js/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/globals.html" afterPath="$PROJECT_DIR$/docs/globals.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/index.html" afterPath="$PROJECT_DIR$/docs/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/accountsapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/accountsapi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/apiwrapper.html" afterPath="$PROJECT_DIR$/docs/interfaces/apiwrapper.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/baseapiresponse.html" afterPath="$PROJECT_DIR$/docs/interfaces/baseapiresponse.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/block.html" afterPath="$PROJECT_DIR$/docs/interfaces/block.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/blocksapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/blocksapi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/blockstatusresponse.html" afterPath="$PROJECT_DIR$/docs/interfaces/blockstatusresponse.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/dappsapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/dappsapi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/delegate.html" afterPath="$PROJECT_DIR$/docs/interfaces/delegate.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/delegatesapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/delegatesapi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/loaderapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/loaderapi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/multisignaturesapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/multisignaturesapi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/peersapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/peersapi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/rise.html" afterPath="$PROJECT_DIR$/docs/interfaces/rise.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/accounts.ts" afterPath="$PROJECT_DIR$/src/apis/accounts.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/blocks.ts" afterPath="$PROJECT_DIR$/src/apis/blocks.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/dapps.ts" afterPath="$PROJECT_DIR$/src/apis/dapps.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/signaturesapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/signaturesapi.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/interfaces/transactionsapi.html" afterPath="$PROJECT_DIR$/docs/interfaces/transactionsapi.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/delegates.ts" afterPath="$PROJECT_DIR$/src/apis/delegates.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/loader.ts" afterPath="$PROJECT_DIR$/src/apis/loader.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/multiSignatures.ts" afterPath="$PROJECT_DIR$/src/apis/multiSignatures.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/peers.ts" afterPath="$PROJECT_DIR$/src/apis/peers.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/signatures.ts" afterPath="$PROJECT_DIR$/src/apis/signatures.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/transactions.ts" afterPath="$PROJECT_DIR$/src/apis/transactions.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.ts" afterPath="$PROJECT_DIR$/src/index.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/index.ts" afterPath="$PROJECT_DIR$/src/types/apis/index.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" afterPath="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -52,36 +34,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="accounts.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/apis/accounts.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccountsAPI.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/types/apis/AccountsAPI.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BlocksAPI.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/types/apis/BlocksAPI.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="3" column="26" lean-forward="false" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DappsAPI.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/apis/DappsAPI.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,8 +47,8 @@
       <file leaf-file-name="DelegatesAPI.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+            <state relative-caret-position="342">
+              <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,11 +94,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransactionsAPI.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TransactionsAPI.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="234">
               <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delegates.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/apis/delegates.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+                <marker date="1497386431452" expanded="true" signature="2005:2807" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loader.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/apis/loader.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -219,7 +194,6 @@
         <option value="$PROJECT_DIR$/src/types/apis/Peers.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/Signatures.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/Transactions.ts" />
-        <option value="$PROJECT_DIR$/src/apis/delegates.ts" />
         <option value="$PROJECT_DIR$/node_modules/typedoc-clarity-theme/bin/partials/member.declaration.hbs" />
         <option value="$PROJECT_DIR$/node_modules/typedoc-clarity-theme/bin/partials/member.signatures.hbs" />
         <option value="$PROJECT_DIR$/node_modules/typedoc/dist/lib/converter/types/string-literal.js" />
@@ -237,12 +211,13 @@
         <option value="$PROJECT_DIR$/src/types/apis/Accounts.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/BlocksAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/DappsAPI.ts" />
-        <option value="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/LoaderAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/MultiSignaturesAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/PeersAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/SignaturesAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts" />
+        <option value="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" />
+        <option value="$PROJECT_DIR$/src/apis/delegates.ts" />
       </list>
     </option>
   </component>
@@ -266,9 +241,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
+    <option name="y" value="27" />
     <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="height" value="1053" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -285,6 +260,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -292,37 +269,11 @@
               <item name="Rise-SDK-NodeJS" type="b2602c69:ProjectViewProjectNode" />
               <item name="Rise-SDK-NodeJS" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Rise-SDK-NodeJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rise-SDK-NodeJS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rise-SDK-NodeJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rise-SDK-NodeJS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="apis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rise-SDK-NodeJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rise-SDK-NodeJS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Rise-SDK-NodeJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Rise-SDK-NodeJS" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="types" type="462c0819:PsiDirectoryNode" />
-              <item name="apis" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -333,7 +284,7 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
     <property name="typescript-compiler-editor-notification" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="cbac&#9;null&#9;null&#10;getPu&#9;null&#9;null&#10;Accounts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/types/apis/Accounts.ts&#10;index.ts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/index.ts&#10;Accounts.ts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/api/accounts.ts&#10;accounts.ts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/api/accounts.ts&#10;tslib&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/node_modules/tslib/tslib.es6.js&#10;ParameterType&#9;null&#9;null&#10;ParameterT&#9;null&#9;null&#10;DeclarationRefl&#9;null&#9;null&#10;putDelega&#9;null&#9;null&#10;putDelegate&#9;null&#9;null&#10;BaseApiR&#9;null&#9;null&#10;signat&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/signatures.js&#10;delegates.js&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/delegates.js&#10;delegate&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/delegates.js&#10;delega&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/delegates.js" />
+    <property name="SearchEverywhereHistoryKey" value="load&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/apis/loader.ts&#10;dele&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/apis/delegates.ts&#10;cbac&#9;null&#9;null&#10;getPu&#9;null&#9;null&#10;Accounts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/types/apis/Accounts.ts&#10;index.ts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/index.ts&#10;Accounts.ts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/api/accounts.ts&#10;accounts.ts&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/src/api/accounts.ts&#10;tslib&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/node_modules/tslib/tslib.es6.js&#10;ParameterType&#9;null&#9;null&#10;ParameterT&#9;null&#9;null&#10;DeclarationRefl&#9;null&#9;null&#10;putDelega&#9;null&#9;null&#10;putDelegate&#9;null&#9;null&#10;BaseApiR&#9;null&#9;null&#10;signat&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/signatures.js&#10;delegates.js&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/delegates.js&#10;delegate&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/delegates.js&#10;delega&#9;FILE&#9;file:///home/andrea/git/personale/crypto/rise/Rise-SDK-NodeJS/publicapi/delegates.js" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -479,6 +430,7 @@
       <workItem from="1497254986076" duration="336000" />
       <workItem from="1497255401563" duration="11000" />
       <workItem from="1497255454113" duration="12479000" />
+      <workItem from="1497383063785" duration="4446000" />
     </task>
     <task id="LOCAL-00001" summary="Init typescript refactor.">
       <created>1496914338925</created>
@@ -606,14 +558,28 @@
       <option name="project" value="LOCAL" />
       <updated>1497280241717</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Refactored some naming for better clarity.">
+      <created>1497290583966</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1497290583966</updated>
+    </task>
+    <task id="LOCAL-00020" summary="added new API for delegates.">
+      <created>1497383854661</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1497383854661</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65473000" />
+    <option name="totallyTimeSpent" value="72302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -624,12 +590,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3062967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26703298" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27510685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -639,33 +605,12 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.268" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2751736" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -722,7 +667,9 @@
     <MESSAGE value="doc theme + init dapps." />
     <MESSAGE value="Fixed signature for better code completion" />
     <MESSAGE value="better theme for documentation." />
-    <option name="LAST_COMMIT_MESSAGE" value="better theme for documentation." />
+    <MESSAGE value="Refactored some naming for better clarity." />
+    <MESSAGE value="added new API for delegates." />
+    <option name="LAST_COMMIT_MESSAGE" value="added new API for delegates." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -738,7 +685,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/typedoc-default-themes/bin/default/assets/css/main.css" />
     <entry file="file://$PROJECT_DIR$/node_modules/typedoc-default-themes/bin/default/layouts/default.hbs" />
     <entry file="file://$PROJECT_DIR$/node_modules/typedoc-default-themes/bin/default/partials/header.hbs" />
     <entry file="file://$PROJECT_DIR$/node_modules/typedoc-default-themes/bin/minimal/templates/index.hbs" />
@@ -759,7 +705,7 @@
         <state relative-caret-position="90">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -769,16 +715,6 @@
         <state relative-caret-position="144">
           <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apis/loader.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -795,7 +731,7 @@
         <state relative-caret-position="72">
           <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -805,7 +741,7 @@
         <state relative-caret-position="72">
           <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -815,7 +751,7 @@
         <state relative-caret-position="90">
           <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
           <folding>
-            <element signature="e#0#42#0" expanded="true" />
+            <element signature="e#0#42#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -844,17 +780,6 @@
             </folding>
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apis/delegates.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-            <marker date="1497290140184" expanded="true" signature="1988:2399" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -932,13 +857,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/typedoc/dist/lib/converter/types/reference.js.map">
+      <provider editor-type-id="sourcemapFileViewerProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/typedoc-test-plugin/plugin.ts" />
@@ -1037,14 +962,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/types/apis/LoaderAPI.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
@@ -1081,6 +998,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/es5/apis/accounts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="29" column="27" lean-forward="false" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apis/delegates.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+            <marker date="1497386431452" expanded="true" signature="2005:2807" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apis/loader.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" column="3" lean-forward="false" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding />
         </state>
       </provider>

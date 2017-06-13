@@ -1,4 +1,4 @@
-import { cback, rs } from '../types/base';
+import { BaseApiResponse, cback, rs } from '../types/base';
 import { Delegate, Transaction } from '../types/responses';
 import { DelegatesAPI } from '../types/apis/DelegatesAPI';
 /**
@@ -85,7 +85,11 @@ export const delegates = (rs: rs): DelegatesAPI => ({
     )
   },
 
-  getForgingStatus(publicKey?:string, callback?: cback<{enabled:boolean}>){
+  getForgingStatus(publicKey?:string|cback<{enabled:boolean, delegates: string[]}>, callback?: cback<{enabled:boolean}>){
+    if (typeof(publicKey) === 'function') {
+      callback = publicKey;
+      publicKey = undefined;
+    }
     return rs(
       {
         path: `/delegates/forging/status`,
