@@ -955,6 +955,9 @@ img { max-width: 100%; }
 					<a href="delegatesapi.html#getforgedbyaccount" class="tsd-kind-icon">get<wbr>Forged<wbr>ByAccount</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a href="delegatesapi.html#getforgingstatus" class="tsd-kind-icon">get<wbr>Forging<wbr>Status</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
 					<a href="delegatesapi.html#getlist" class="tsd-kind-icon">get<wbr>List</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
@@ -1061,6 +1064,7 @@ img { max-width: 100%; }
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getbypublickey" class="tsd-kind-icon">get<wbr>ByPublic<wbr>Key</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getbyusername" class="tsd-kind-icon">get<wbr>ByUsername</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getforgedbyaccount" class="tsd-kind-icon">get<wbr>Forged<wbr>ByAccount</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getforgingstatus" class="tsd-kind-icon">get<wbr>Forging<wbr>Status</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getlist" class="tsd-kind-icon">get<wbr>List</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getnextforgers" class="tsd-kind-icon">get<wbr>Next<wbr>Forgers</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="delegatesapi.html#getvoters" class="tsd-kind-icon">get<wbr>Voters</a></li>
@@ -1082,7 +1086,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L5">types/apis/DelegatesAPI.ts:5</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L5">types/apis/DelegatesAPI.ts:5</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1119,7 +1123,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L13">types/apis/DelegatesAPI.ts:13</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L13">types/apis/DelegatesAPI.ts:13</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1148,7 +1152,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L11">types/apis/DelegatesAPI.ts:11</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L11">types/apis/DelegatesAPI.ts:11</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1174,7 +1178,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L9">types/apis/DelegatesAPI.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L9">types/apis/DelegatesAPI.ts:9</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1200,13 +1204,54 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L19">types/apis/DelegatesAPI.ts:19</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L19">types/apis/DelegatesAPI.ts:19</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
 						<ul class="tsd-parameters">
 							<li>
 								<h5>publicKey: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+				<a name="getforgingstatus" class="tsd-anchor"></a>
+				<h3>get<wbr>Forging<wbr>Status</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Forging<wbr>Status<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Forging<wbr>Status<span class="tsd-signature-symbol">(</span>publicKey<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L21">types/apis/DelegatesAPI.ts:21</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L22">types/apis/DelegatesAPI.ts:22</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> publicKey: <span class="tsd-signature-type">string</span></h5>
 							</li>
 							<li>
 								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
@@ -1226,7 +1271,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L7">types/apis/DelegatesAPI.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L7">types/apis/DelegatesAPI.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1263,7 +1308,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L21">types/apis/DelegatesAPI.ts:21</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L24">types/apis/DelegatesAPI.ts:24</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1286,7 +1331,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L15">types/apis/DelegatesAPI.ts:15</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L15">types/apis/DelegatesAPI.ts:15</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1312,7 +1357,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/79906bf/src/types/apis/DelegatesAPI.ts#L17">types/apis/DelegatesAPI.ts:17</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/DelegatesAPI.ts#L17">types/apis/DelegatesAPI.ts:17</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
