@@ -1,7 +1,7 @@
 
 import {  cback } from '../types/base';
 import { rs } from '../types/base';
-import { Delegate } from '../types/responses';
+import { Delegate, Account } from '../types/responses';
 import { AccountsAPI } from '../types/apis/AccountsAPI';
 
 /**
