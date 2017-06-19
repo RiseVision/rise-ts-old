@@ -7,7 +7,7 @@ export interface TransactionsAPI {
 
   getList(query: { blockId?: string, senderId?: string, recipientId?: string, limit?: number, offset?: number, orderBy?: string }, callback?: cback<{ transactions: Transaction<any>[] }>): Promise<{ transactions: Transaction<any>[] } & BaseApiResponse>
 
-  send(conf: { secret: string, amount: number, recipientId: string, publicKey?: string, secondSecret?: string }, callback?: cback<any>): Promise<any>
+  send(conf: { secret: string, amount: number, recipientId: string, publicKey?: string, secondSecret?: string }, callback?: cback<{transactionId:string}>): Promise<{transactionId:string} & BaseApiResponse>
 
   getUnconfirmedTransactions(callback?: cback<{ transactions: Transaction<any>[] }>): Promise<{ transactions: Transaction<any>[] } & BaseApiResponse>
 
