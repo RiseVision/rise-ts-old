@@ -1,4 +1,3 @@
-
 export interface BlockStatusResponse {
   broadhash: string
   epoch: string
@@ -43,12 +42,16 @@ export interface Delegate {
   productivity: number
 }
 
-
 export type Account = {
-  username: string
-  address: string
-  publicKey: string
-  balance: string
+  address: string,
+  unconfirmedBalance: string,
+  balance: string,
+  publicKey: string,
+  unconfirmedSignature: string,
+  secondSignature: string,
+  secondPublicKey: string,
+  multisignatures: string[],
+  u_multisignatures: string[]
 }
 
 export enum TransactionType {

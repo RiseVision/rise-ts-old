@@ -1,5 +1,5 @@
 import { BaseApiResponse, cback } from '../base';
-import { Delegate, Account } from '../beans';
+import { Account, Delegate } from '../beans';
 
 export interface AccountsAPI {
   /**

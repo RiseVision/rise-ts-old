@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="74eb3afd-959d-45df-a9ed-372f7b7cdc19" name="Default" comment="fix">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/types/responses.ts" afterPath="$PROJECT_DIR$/src/types/beans.ts" />
+    <list default="true" id="74eb3afd-959d-45df-a9ed-372f7b7cdc19" name="Default" comment="refactored beans. Added TransactionTypes Enum">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/browser/index.js" afterPath="$PROJECT_DIR$/dist/browser/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/accounts.ts" afterPath="$PROJECT_DIR$/src/apis/accounts.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/blocks.ts" afterPath="$PROJECT_DIR$/src/apis/blocks.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/delegates.ts" afterPath="$PROJECT_DIR$/src/apis/delegates.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/peers.ts" afterPath="$PROJECT_DIR$/src/apis/peers.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/apis/transactions.ts" afterPath="$PROJECT_DIR$/src/apis/transactions.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.ts" afterPath="$PROJECT_DIR$/src/index.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/AccountsAPI.ts" afterPath="$PROJECT_DIR$/src/types/apis/AccountsAPI.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/BlocksAPI.ts" afterPath="$PROJECT_DIR$/src/types/apis/BlocksAPI.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" afterPath="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/PeersAPI.ts" afterPath="$PROJECT_DIR$/src/types/apis/PeersAPI.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts" afterPath="$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/types/beans.ts" afterPath="$PROJECT_DIR$/src/types/beans.ts" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,8 +18,8 @@
       <file leaf-file-name="TransactionsAPI.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="126">
+              <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding>
                 <element signature="e#0#56#0" expanded="true" />
               </folding>
@@ -41,9 +30,21 @@
       <file leaf-file-name="accounts.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/apis/accounts.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
+            <state relative-caret-position="234">
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountsAPI.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/types/apis/AccountsAPI.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+              <folding>
+                <element signature="e#0#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,9 +62,40 @@
       <file leaf-file-name="beans.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/types/beans.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+            <state relative-caret-position="166">
+              <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AccountsAPI.d.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dist/es5/types/apis/AccountsAPI.d.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="193">
+              <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+              <folding>
+                <marker date="1498061298962" expanded="true" signature="125:2542" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="392:411" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="481:488" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="513:698" ph="/** Returns balance and unconfirmed balance for the specified address! ...*/" />
+                <marker date="1498061298962" expanded="true" signature="748:816" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="828:896" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="921:1053" ph="/** Returns the address public key ...*/" />
+                <marker date="1498061298962" expanded="true" signature="1105:1139" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="1151:1185" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="1210:1351" ph="/** Generates a Public Key ...*/" />
+                <marker date="1498061298962" expanded="true" signature="1407:1441" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="1453:1487" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="1512:1652" ph="/** Get Account information by its address ...*/" />
+                <marker date="1498061298962" expanded="true" signature="1702:1735" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="1747:1780" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="1805:1959" ph="/** Return accounts delegates by using the given address ...*/" />
+                <marker date="1498061298962" expanded="true" signature="2011:2049" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="2061:2099" ph="..." />
+                <marker date="1498061298962" expanded="true" signature="2124:2359" ph="/** Cast votes. The delegates array must use delegate Public Key prepended witha &quot;+&quot; or &quot;-&quot; sign wether you want to up/downvote the delegate ...*/" />
+                <marker date="1498061298962" expanded="true" signature="2383:2501" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,7 +105,11 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-697">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <folding>
+                <marker date="1498061298958" expanded="true" signature="910:1166" ph="..." />
+                <marker date="1498061298958" expanded="true" signature="1204:1344" ph="..." />
+                <marker date="1498061298958" expanded="true" signature="1382:1677" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,37 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="delegates.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/apis/delegates.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-180">
-              <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-                <marker date="1498055541230" expanded="true" signature="2001:2803" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#229#366#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="transactions.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="transactions.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/apis/transactions.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+            <state relative-caret-position="126">
+              <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -221,12 +231,12 @@
         <option value="$PROJECT_DIR$/src/types/apis/SignaturesAPI.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts" />
         <option value="$PROJECT_DIR$/src/apis/delegates.ts" />
-        <option value="$PROJECT_DIR$/src/types/apis/AccountsAPI.ts" />
-        <option value="$PROJECT_DIR$/src/apis/accounts.ts" />
-        <option value="$PROJECT_DIR$/src/types/beans.ts" />
         <option value="$PROJECT_DIR$/src/index.ts" />
         <option value="$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts" />
         <option value="$PROJECT_DIR$/src/apis/transactions.ts" />
+        <option value="$PROJECT_DIR$/src/apis/accounts.ts" />
+        <option value="$PROJECT_DIR$/src/types/beans.ts" />
+        <option value="$PROJECT_DIR$/src/types/apis/AccountsAPI.ts" />
       </list>
     </option>
   </component>
@@ -489,7 +499,7 @@
       <workItem from="1497980714707" duration="38000" />
       <workItem from="1497984239854" duration="665000" />
       <workItem from="1498031382075" duration="70000" />
-      <workItem from="1498054334461" duration="3147000" />
+      <workItem from="1498054334461" duration="4806000" />
     </task>
     <task id="LOCAL-00001" summary="Init typescript refactor.">
       <created>1496914338925</created>
@@ -645,11 +655,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497909961902</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="refactored beans. Added TransactionTypes Enum">
+      <created>1498060339795</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1498060339795</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="80932000" />
+    <option name="totallyTimeSpent" value="82591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -670,6 +687,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2735043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Fabric" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -683,7 +701,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="SvgViewer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,7 +761,8 @@
     <MESSAGE value="added new API for delegates." />
     <MESSAGE value="fixed wrong 'success' result check." />
     <MESSAGE value="fix send transaction response." />
-    <option name="LAST_COMMIT_MESSAGE" value="fix send transaction response." />
+    <MESSAGE value="refactored beans. Added TransactionTypes Enum" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored beans. Added TransactionTypes Enum" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -760,16 +778,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/apis/dapps.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#42#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/apis/index.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -972,13 +980,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/apis/AccountsAPI.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="30" lean-forward="false" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/types/apis/DelegatesAPI.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -1039,7 +1040,7 @@
         <state relative-caret-position="-180">
           <caret line="71" column="14" lean-forward="false" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
           <folding>
-            <element signature="e#0#59#0" expanded="true" />
+            <element signature="e#0#59#0" expanded="false" />
             <marker date="1498055541230" expanded="true" signature="2001:2803" ph="{...}" />
           </folding>
         </state>
@@ -1058,8 +1059,8 @@
         <state relative-caret-position="216">
           <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#229#366#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
+            <element signature="e#229#366#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1080,19 +1081,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/types/beans.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="53" column="29" lean-forward="false" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/es5/types/beans.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1498061298958" expanded="true" signature="910:1166" ph="..." />
+            <marker date="1498061298958" expanded="true" signature="1204:1344" ph="..." />
+            <marker date="1498061298958" expanded="true" signature="1382:1677" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,29 +1101,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/apis/transactions.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/es5/types/apis/AccountsAPI.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="54" column="21" lean-forward="false" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+          <folding>
+            <marker date="1498061298962" expanded="true" signature="125:2542" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="392:411" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="481:488" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="513:698" ph="/** Returns balance and unconfirmed balance for the specified address! ...*/" />
+            <marker date="1498061298962" expanded="true" signature="748:816" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="828:896" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="921:1053" ph="/** Returns the address public key ...*/" />
+            <marker date="1498061298962" expanded="true" signature="1105:1139" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="1151:1185" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="1210:1351" ph="/** Generates a Public Key ...*/" />
+            <marker date="1498061298962" expanded="true" signature="1407:1441" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="1453:1487" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="1512:1652" ph="/** Get Account information by its address ...*/" />
+            <marker date="1498061298962" expanded="true" signature="1702:1735" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="1747:1780" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="1805:1959" ph="/** Return accounts delegates by using the given address ...*/" />
+            <marker date="1498061298962" expanded="true" signature="2011:2049" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="2061:2099" ph="..." />
+            <marker date="1498061298962" expanded="true" signature="2124:2359" ph="/** Cast votes. The delegates array must use delegate Public Key prepended witha &quot;+&quot; or &quot;-&quot; sign wether you want to up/downvote the delegate ...*/" />
+            <marker date="1498061298962" expanded="true" signature="2383:2501" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/types/beans.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="50" column="9" lean-forward="false" selection-start-line="50" selection-start-column="9" selection-end-line="50" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/apis/accounts.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/types/apis/TransactionsAPI.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="51" lean-forward="false" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+        <state relative-caret-position="126">
+          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
           <folding>
             <element signature="e#0#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/apis/accounts.ts">
+    <entry file="file://$PROJECT_DIR$/src/types/apis/AccountsAPI.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="35" column="14" lean-forward="false" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/apis/transactions.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="252">
+          <caret line="15" column="58" lean-forward="true" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
