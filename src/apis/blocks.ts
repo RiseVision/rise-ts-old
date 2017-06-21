@@ -1,5 +1,5 @@
 import { cback, rs } from '../types/base';
-import { Block, BlockStatusResponse } from '../types/responses';
+import { Block, BlockStatusResponse } from '../types/beans';
 import { BlocksAPI } from '../types/apis/BlocksAPI';
 
 /**

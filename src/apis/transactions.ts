@@ -1,5 +1,5 @@
-import { cback, rs } from '../types/base';
-import { Transaction } from '../types/responses';
+import { BaseApiResponse, cback, rs } from '../types/base';
+import { Transaction } from '../types/beans';
 import { TransactionsAPI } from '../types/apis/TransactionsAPI';
 /**
  * @private
@@ -14,7 +14,13 @@ export const transactions = (rs: rs): TransactionsAPI => ({
     }, callback);
   },
 
-  getList(query: { blockId?: string, senderId?: string, recipientId?: string, limit?: number, offset?: number, orderBy?: string } = {}, callback?: cback<{ transactions: Transaction<any>[] }>) {
+  count(callback?: cback<{ confirmed: number, multisignature: number, unconfirmed: number, queued: number }>){
+    return rs({
+      path: '/transactions/count',
+    }, callback);
+  },
+
+  getList(query = {}, callback?) {
     return rs({
       path: '/transactions',
       params: {...query},

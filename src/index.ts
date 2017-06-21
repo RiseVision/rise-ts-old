@@ -10,6 +10,7 @@ import {
   SignaturesAPI,
   TransactionsAPI
 } from './types/apis/';
+export * from './types/beans';
 import {
   accounts,
   blocks,

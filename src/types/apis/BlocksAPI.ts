@@ -1,5 +1,5 @@
 import { BaseApiResponse, cback } from '../base';
-import { Block, BlockStatusResponse } from '../responses';
+import { Block, BlockStatusResponse } from '../beans';
 
 export interface BlocksAPI {
 

@@ -1,5 +1,5 @@
 import { cback, rs } from '../types/base';
-import { Peer } from '../types/responses';
+import { Peer } from '../types/beans';
 import { PeersAPI } from '../types/apis/PeersAPI';
 /**
  * @private

@@ -1,5 +1,5 @@
 import { BaseApiResponse, cback, rs } from '../types/base';
-import { Delegate, Transaction } from '../types/responses';
+import { Delegate, Transaction } from '../types/beans';
 import { DelegatesAPI } from '../types/apis/DelegatesAPI';
 /**
  * @private

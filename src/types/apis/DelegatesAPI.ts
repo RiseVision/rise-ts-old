@@ -1,5 +1,5 @@
 import { BaseApiResponse, cback } from '../base';
-import { Delegate, Transaction } from '../responses';
+import { Delegate, Transaction } from '../beans';
 
 export interface DelegatesAPI {
   enable(data: { secret: string, secondSecret?: string, username: string }, callback?: cback<Transaction<{ delegate: { username: string, publicKey: string } }>>): Promise<Transaction<{ delegate: { username: string, publicKey: string } }> & BaseApiResponse>
