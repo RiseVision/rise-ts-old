@@ -10,7 +10,7 @@ export interface DelegatesAPI {
 
   getByPublicKey(publicKey: string, callback?: cback<{ delegate: Delegate }>): Promise<{ delegate: Delegate } & BaseApiResponse>
 
-  getByKeyVal(key: keyof Delegate, value: string, callback?: cback<{ delegate: Delegate }>): Promise<{ delegate: Delegate } & BaseApiResponse>
+  getByKeyVal(key: 'publicKey' | 'username', value: string, callback?: cback<{ delegate: Delegate }>): Promise<{ delegate: Delegate } & BaseApiResponse>
 
   getVoters(publicKey: string, callback?: cback<{ accounts: Account[] }>): Promise<{ accounts: Account[] } & BaseApiResponse>
 
@@ -18,8 +18,9 @@ export interface DelegatesAPI {
 
   getForgedByAccount(publicKey: string, callback?: cback<{ fees: string, rewards: string, forged: string }>): Promise<{ fees: string, rewards: string, forged: string } & BaseApiResponse>
 
-  getForgingStatus(callback?: cback<{enabled:boolean, delegates: string[]}>): Promise<{enabled:boolean, delegates: string[]} & BaseApiResponse>
-  getForgingStatus(publicKey?:string, callback?: cback<{enabled:boolean}>): Promise<{enabled: boolean} & BaseApiResponse>
+  getForgingStatus(callback?: cback<{ enabled: boolean, delegates: string[] }>): Promise<{ enabled: boolean, delegates: string[] } & BaseApiResponse>
 
-  getNextForgers(callback?: cback<{currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[]}>): Promise<{currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[]} & BaseApiResponse>
+  getForgingStatus(publicKey?: string, callback?: cback<{ enabled: boolean }>): Promise<{ enabled: boolean } & BaseApiResponse>
+
+  getNextForgers(callback?: cback<{ currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[] }>): Promise<{ currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[] } & BaseApiResponse>
 }

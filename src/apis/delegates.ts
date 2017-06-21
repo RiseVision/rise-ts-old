@@ -36,7 +36,7 @@ export const delegates = (rs: rs): DelegatesAPI => ({
     return this.getByKeyVal('publicKey', publicKey, callback);
   },
 
-  getByKeyVal(key: keyof Delegate, value: string, callback?: cback<{ delegate: Delegate }>) {
+  getByKeyVal(key: 'username'|'publicKey', value: string, callback?: cback<{ delegate: Delegate }>) {
     const query = {};
     query[key] = value;
     return rs(
