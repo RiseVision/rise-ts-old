@@ -12,7 +12,7 @@ export interface DelegatesAPI {
 
   getByKeyVal(key: 'publicKey' | 'username', value: string, callback?: cback<{ delegate: Delegate }>): Promise<{ delegate: Delegate } & BaseApiResponse>
 
-  getVoters(publicKey: string, callback?: cback<{ accounts: Account[] }>): Promise<{ accounts: Account[] } & BaseApiResponse>
+  getVoters(publicKey: string, callback?: cback<{ accounts: {username?:string, address:string, publicKey:string, balance:string}[] }>): Promise<{ accounts: {username?:string, address:string, publicKey:string, balance:string}[] } & BaseApiResponse>
 
   toggleForging(obj: { secret: string, enable: boolean }, callback?: cback<{ address: string }>): Promise<{ address: string } & BaseApiResponse>
 

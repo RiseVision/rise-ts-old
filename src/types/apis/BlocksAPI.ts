@@ -21,5 +21,5 @@ export interface BlocksAPI {
 
   getBlock(id: string, callback?: cback<{ block: Block }>): Promise<{ block: Block } & BaseApiResponse>
 
-  getBlocks(query: { [k: string]: any }, callback?: cback<{ blocks: Block[], count: number }>): Promise<{ blocks: Block[], count: number } & BaseApiResponse>
+  getBlocks(query: { limit?: number, orderBy?: string, offset?: number, generatorPublicKey?: string, totalAmount?: number, totalFee?: number, reward?: number, previousBlock?: string, height?: number }, callback?: cback<{ blocks: Block[], count: number }>): Promise<{ blocks: Block[], count: number } & BaseApiResponse>
 }

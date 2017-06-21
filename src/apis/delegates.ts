@@ -48,7 +48,7 @@ export const delegates = (rs: rs): DelegatesAPI => ({
     );
   },
 
-  getVoters(publicKey: string, callback?: cback<{ accounts: Account[] }>) {
+  getVoters(publicKey: string, callback?: cback<{ accounts: {username?:string, address:string, publicKey:string, balance:string}[] }>) {
     return rs(
       {
         path: `/delegates/voters`,
