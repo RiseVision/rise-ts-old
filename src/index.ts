@@ -86,7 +86,7 @@ const requester = (nodeAddress) => <R>(obj: { params?: any, path: string, method
   })
     .then(resp => {
       if (resp.data.success == false) {
-        return Promise.reject(resp.data.error);
+        return Promise.reject(new Error(resp.data.error));
       }
       return resp.data;
     })
