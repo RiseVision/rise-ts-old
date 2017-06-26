@@ -85,13 +85,19 @@ export type Transaction<T> = {
 export type Peer = {
   ip: string
   port: number
-  state: number
+  state: PeerState
   os: string
   version: string
   dappid: string
   broadhash: string
-  height: string
+  height: number
   clock: string
   updated: number
   nonce: string
+}
+
+export enum PeerState {
+  BANNED = 0,
+  DISCONNECTED = 1,
+  ACTIVE = 2
 }
