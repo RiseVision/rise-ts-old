@@ -34,8 +34,8 @@ export interface Delegate {
   address: string
   publicKey: string
   vote: string
-  producedBlocks: number
-  missedBlocks: number
+  producedblocks: number
+  missedblocks: number
   rate: number
   rank: number
   approval: number
@@ -47,8 +47,8 @@ export type Account = {
   unconfirmedBalance: string,
   balance: string,
   publicKey: string,
-  unconfirmedSignature: string,
-  secondSignature: string,
+  unconfirmedSignature: 0|1,
+  secondSignature: 0|1,
   secondPublicKey: string,
   multisignatures: string[],
   u_multisignatures: string[]
