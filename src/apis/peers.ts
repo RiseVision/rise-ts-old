@@ -1,12 +1,12 @@
 import { cback, rs } from '../types/base';
-import { Peer } from '../types/beans';
+import { Peer, PeerState } from '../types/beans';
 import { PeersAPI } from '../types/apis/PeersAPI';
 /**
  * @private
  * @internal
  */
 export const peers = (rs: rs): PeersAPI => ({
-  getList(query: { state?: string, os?: string, version?: string, limit?: number, offset?: number, orderBy?: string } = {}, callback?: cback<{ peers: Peer[] }>) {
+  getList(query: { state?: PeerState, os?: string, version?: string, limit?: number, offset?: number, orderBy?: string } = {}, callback?: cback<{ peers: Peer[] }>) {
     return rs({
       path: '/peers',
       params: {...query},
