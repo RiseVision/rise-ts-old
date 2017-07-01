@@ -1,17 +1,15 @@
-
-import {  cback } from '../types/base';
-import { rs } from '../types/base';
-import { Delegate, Account } from '../types/beans';
+import { cback, rs } from '../types/base';
+import { Account, Delegate } from '../types/beans';
 import { AccountsAPI } from '../types/apis/AccountsAPI';
 
 /**
  * @private
  * @internal
  */
-export const accounts = (rs:rs): AccountsAPI => ({
+export const accounts = (rs: rs): AccountsAPI => ({
 
 
-  open(secret: string, callback?: cback<{account: Account}>) {
+  open(secret: string, callback?: cback<{ account: Account }>) {
     return rs({
         path: '/accounts/open/',
         method: 'POST',
@@ -22,7 +20,7 @@ export const accounts = (rs:rs): AccountsAPI => ({
   },
 
 
-  getBalance(address: string, callback?: cback<{balance: string, unconfirmedBalance: string}>) {
+  getBalance(address: string, callback?: cback<{ balance: string, unconfirmedBalance: string }>) {
     return rs(
       {
         path: `/accounts/getBalance`,
@@ -32,7 +30,7 @@ export const accounts = (rs:rs): AccountsAPI => ({
     );
   },
 
-  getPublicKey(address: string, callback?: cback<{publicKey: string}>) {
+  getPublicKey(address: string, callback?: cback<{ publicKey: string }>) {
     return rs(
       {
         path: `/accounts/getPublicKey`,
@@ -42,7 +40,7 @@ export const accounts = (rs:rs): AccountsAPI => ({
     );
   },
 
-  generatePublicKey(secret: string, callback?: cback<{publicKey: string}>) {
+  generatePublicKey(secret: string, callback?: cback<{ publicKey: string }>) {
     return rs(
       {
         path: `/accounts/generatePublicKey`,
@@ -53,7 +51,7 @@ export const accounts = (rs:rs): AccountsAPI => ({
     );
   },
 
-  getAccount(address: string, callback?: cback<{account: Account}>) {
+  getAccount(address: string, callback?: cback<{ account: Account }>) {
     return rs(
       {
         path: `/accounts`,
@@ -63,7 +61,17 @@ export const accounts = (rs:rs): AccountsAPI => ({
     );
   },
 
-  getDelegates(address: string, callback?: cback<{delegates: Delegate[]}>) {
+  getAccountByPublicKey(publicKey: string, callback?: cback<{ account: Account }>) {
+    return rs(
+      {
+        path: `/accounts`,
+        params: {publicKey}
+      },
+      callback
+    );
+  },
+
+  getDelegates(address: string, callback?: cback<{ delegates: Delegate[] }>) {
     return rs(
       {
         path: `/accounts/delegates`,
@@ -84,7 +92,7 @@ export const accounts = (rs:rs): AccountsAPI => ({
     );
   }
 
-})
+});
 
 export interface Account {
   address: string

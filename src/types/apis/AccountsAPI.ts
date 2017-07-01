@@ -41,6 +41,14 @@ export interface AccountsAPI {
   getAccount(address: string, callback?: cback<{ account: Account }>): Promise<{ account: Account } & BaseApiResponse>
 
   /**
+   * Get Account information by its publicKey
+   * @param publicKey
+   * @param callback callback where to receive the result.
+   */
+  getAccountByPublicKey(publicKey: string, callback?: cback<{ account: Account }>): Promise<{ account: Account } & BaseApiResponse>
+
+
+  /**
    * Return accounts delegates by using the given address
    * @param address
    * @param callback callback where to receive the result.
