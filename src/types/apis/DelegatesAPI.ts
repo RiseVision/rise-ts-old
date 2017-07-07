@@ -22,5 +22,5 @@ export interface DelegatesAPI {
 
   getForgingStatus(publicKey?: string, callback?: cback<{ enabled: boolean }>): Promise<{ enabled: boolean } & BaseApiResponse>
 
-  getNextForgers(callback?: cback<{ currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[] }>): Promise<{ currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[] } & BaseApiResponse>
+  getNextForgers(limit:number, callback?: cback<{ currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[] }>): Promise<{ currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[] } & BaseApiResponse>
 }

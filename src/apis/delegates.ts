@@ -101,10 +101,11 @@ export const delegates = (rs: rs): DelegatesAPI => ({
     );
   },
 
-  getNextForgers(callback?: cback<{currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[]}>) {
+  getNextForgers(limit:number , callback?: cback<{currentBlock: number, currentBlockSlot: number, currentSlot: number, delegates: string[]}>) {
     return rs(
       {
-        path: `/delegates/getNextForgers`
+        path: `/delegates/getNextForgers`,
+        params: { limit }
       },
       callback
     )
