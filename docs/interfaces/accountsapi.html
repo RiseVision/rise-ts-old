@@ -912,6 +912,12 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-enum">
+			<a href="../enums/peerstate.html" class="tsd-kind-icon">Peer<wbr>State</a>
+		</li>
+		<li class=" tsd-kind-enum">
+			<a href="../enums/transactiontype.html" class="tsd-kind-icon">Transaction<wbr>Type</a>
+		</li>
 		<li class=" tsd-kind-interface">
 			<a href="apiwrapper.html" class="tsd-kind-icon">APIWrapper</a>
 		</li>
@@ -923,6 +929,9 @@ img { max-width: 100%; }
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
 					<a href="accountsapi.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a>
+				</li>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a href="accountsapi.html#getaccountbypublickey" class="tsd-kind-icon">get<wbr>Account<wbr>ByPublic<wbr>Key</a>
 				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
 					<a href="accountsapi.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a>
@@ -1052,6 +1061,7 @@ img { max-width: 100%; }
 						<ul class="tsd-index-list">
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="accountsapi.html#generatepublickey" class="tsd-kind-icon">generate<wbr>Public<wbr>Key</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="accountsapi.html#getaccount" class="tsd-kind-icon">get<wbr>Account</a></li>
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="accountsapi.html#getaccountbypublickey" class="tsd-kind-icon">get<wbr>Account<wbr>ByPublic<wbr>Key</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="accountsapi.html#getbalance" class="tsd-kind-icon">get<wbr>Balance</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="accountsapi.html#getdelegates" class="tsd-kind-icon">get<wbr>Delegates</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="accountsapi.html#getpublickey" class="tsd-kind-icon">get<wbr>Public<wbr>Key</a></li>
@@ -1074,7 +1084,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L33">types/apis/AccountsAPI.ts:33</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L33">types/apis/AccountsAPI.ts:33</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1111,7 +1121,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L41">types/apis/AccountsAPI.ts:41</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L41">types/apis/AccountsAPI.ts:41</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1136,6 +1146,40 @@ img { max-width: 100%; }
 				</ul>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+				<a name="getaccountbypublickey" class="tsd-anchor"></a>
+				<h3>get<wbr>Account<wbr>ByPublic<wbr>Key</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">get<wbr>Account<wbr>ByPublic<wbr>Key<span class="tsd-signature-symbol">(</span>publicKey<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L48">types/apis/AccountsAPI.ts:48</a></li>
+							</ul>
+						</aside>
+						<div class="tsd-comment tsd-typography">
+							<div class="lead">
+								<p>Get Account information by its publicKey</p>
+							</div>
+						</div>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5>publicKey: <span class="tsd-signature-type">string</span></h5>
+							</li>
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<div class="tsd-comment tsd-typography">
+									<p>callback where to receive the result.</p>
+								</div>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
 				<a name="getbalance" class="tsd-anchor"></a>
 				<h3>get<wbr>Balance</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
@@ -1145,7 +1189,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L18">types/apis/AccountsAPI.ts:18</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L18">types/apis/AccountsAPI.ts:18</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1182,7 +1226,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L48">types/apis/AccountsAPI.ts:48</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L56">types/apis/AccountsAPI.ts:56</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1216,7 +1260,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L25">types/apis/AccountsAPI.ts:25</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L25">types/apis/AccountsAPI.ts:25</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1250,7 +1294,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L11">types/apis/AccountsAPI.ts:11</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L11">types/apis/AccountsAPI.ts:11</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">
@@ -1287,7 +1331,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/AccountsAPI.ts#L55">types/apis/AccountsAPI.ts:55</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/AccountsAPI.ts#L63">types/apis/AccountsAPI.ts:63</a></li>
 							</ul>
 						</aside>
 						<div class="tsd-comment tsd-typography">

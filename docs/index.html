@@ -912,6 +912,12 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-enum">
+			<a href="enums/peerstate.html" class="tsd-kind-icon">Peer<wbr>State</a>
+		</li>
+		<li class=" tsd-kind-enum">
+			<a href="enums/transactiontype.html" class="tsd-kind-icon">Transaction<wbr>Type</a>
+		</li>
 		<li class=" tsd-kind-interface">
 			<a href="interfaces/apiwrapper.html" class="tsd-kind-icon">APIWrapper</a>
 		</li>
@@ -1095,12 +1101,27 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 
 <span class="hljs-comment">// interact with node1 &amp; node2 using the same APIs available within 'rise' variable.</span>
 </code></pre>
+			<h2 id="where-is-this-library-used-">Where is this library used?</h2>
+			<p>The library is currently used in the following projects:</p>
+			<ul>
+				<li>RISE bot in slack</li>
+				<li><a href="https://dpostools.com/RISE">dpostools.com (whole website)</a></li>
+				<li><a href="https://dpospools.com/pool/rise_pool">rise_pool pool</a></li>
+				<li>Telegram <a href="https://t.me/delegatesbot">@delegatesbot</a></li>
+			</ul>
 		</div>
 		<div style="position:relative;"><a name="typedoc-main-index" class="tsd-anchor"></a></div>
 		<section class="tsd-panel-group tsd-index-group">
 			<h2>Index</h2>
 			<section class="tsd-panel tsd-index-panel">
 				<div class="tsd-index-content">
+					<section class="tsd-index-section ">
+						<h3>Enumerations</h3>
+						<ul class="tsd-index-list">
+							<li class="tsd-kind-enum"><a href="enums/peerstate.html" class="tsd-kind-icon">Peer<wbr>State</a></li>
+							<li class="tsd-kind-enum"><a href="enums/transactiontype.html" class="tsd-kind-icon">Transaction<wbr>Type</a></li>
+						</ul>
+					</section>
 					<section class="tsd-index-section ">
 						<h3>Interfaces</h3>
 						<ul class="tsd-index-list">
@@ -1164,8 +1185,8 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Account<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/responses.ts#L47">types/responses.ts:47</a></li>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L89">apis/accounts.ts:89</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/beans.ts#L45">types/beans.ts:45</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L97">apis/accounts.ts:97</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1178,10 +1199,25 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 							<h5>balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 						</li>
 						<li class="tsd-parameter">
+							<h5>multisignatures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span></h5>
+						</li>
+						<li class="tsd-parameter">
 							<h5>public<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 						</li>
 						<li class="tsd-parameter">
-							<h5>username<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							<h5>second<wbr>Public<wbr>Key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>second<wbr>Signature<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>u_<wbr>multisignatures<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string[]</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>unconfirmed<wbr>Balance<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+						</li>
+						<li class="tsd-parameter">
+							<h5>unconfirmed<wbr>Signature<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span></h5>
 						</li>
 					</ul>
 				</div>
@@ -1191,7 +1227,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L90">apis/accounts.ts:90</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L98">apis/accounts.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1201,17 +1237,17 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L92">apis/accounts.ts:92</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L100">apis/accounts.ts:100</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-type-alias tsd-is-external">
-					<a name="account.multisignatures" class="tsd-anchor"></a>
+					<a name="account.multisignatures-1" class="tsd-anchor"></a>
 					<h3>multisignatures</h3>
 					<div class="tsd-signature tsd-kind-icon">multisignatures<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L97">apis/accounts.ts:97</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L105">apis/accounts.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1221,57 +1257,57 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">public<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L93">apis/accounts.ts:93</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L101">apis/accounts.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-type-alias tsd-is-external">
-					<a name="account.secondpublickey" class="tsd-anchor"></a>
+					<a name="account.secondpublickey-1" class="tsd-anchor"></a>
 					<h3>second<wbr>Public<wbr>Key</h3>
 					<div class="tsd-signature tsd-kind-icon">second<wbr>Public<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L96">apis/accounts.ts:96</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L104">apis/accounts.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-type-alias tsd-is-external">
-					<a name="account.secondsignature" class="tsd-anchor"></a>
+					<a name="account.secondsignature-1" class="tsd-anchor"></a>
 					<h3>second<wbr>Signature</h3>
 					<div class="tsd-signature tsd-kind-icon">second<wbr>Signature<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L95">apis/accounts.ts:95</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L103">apis/accounts.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-type-alias tsd-is-external">
-					<a name="account.u_multisignatures" class="tsd-anchor"></a>
+					<a name="account.u_multisignatures-1" class="tsd-anchor"></a>
 					<h3>u_<wbr>multisignatures</h3>
 					<div class="tsd-signature tsd-kind-icon">u_<wbr>multisignatures<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L98">apis/accounts.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L106">apis/accounts.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-type-alias tsd-is-external">
-					<a name="account.unconfirmedbalance" class="tsd-anchor"></a>
+					<a name="account.unconfirmedbalance-1" class="tsd-anchor"></a>
 					<h3>unconfirmed<wbr>Balance</h3>
 					<div class="tsd-signature tsd-kind-icon">unconfirmed<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L91">apis/accounts.ts:91</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L99">apis/accounts.ts:99</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-type-alias tsd-is-external">
-					<a name="account.unconfirmedsignature" class="tsd-anchor"></a>
+					<a name="account.unconfirmedsignature-1" class="tsd-anchor"></a>
 					<h3>unconfirmed<wbr>Signature</h3>
 					<div class="tsd-signature tsd-kind-icon">unconfirmed<wbr>Signature<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L94">apis/accounts.ts:94</a></li>
+							<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L102">apis/accounts.ts:102</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1282,7 +1318,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Api<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="interfaces/baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/base.ts#L7">types/base.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/base.ts#L7">types/base.ts:7</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1292,7 +1328,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Peer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/responses.ts#L71">types/responses.ts:71</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/beans.ts#L85">types/beans.ts:85</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1308,7 +1344,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 							<h5>dappid<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
 						</li>
 						<li class="tsd-parameter">
-							<h5>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
+							<h5>height<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 						</li>
 						<li class="tsd-parameter">
 							<h5>ip<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></h5>
@@ -1323,7 +1359,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 							<h5>port<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 						</li>
 						<li class="tsd-parameter">
-							<h5>state<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							<h5>state<span class="tsd-signature-symbol">: </span><a href="enums/peerstate.html" class="tsd-signature-type">PeerState</a></h5>
 						</li>
 						<li class="tsd-parameter">
 							<h5>updated<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
@@ -1340,7 +1376,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Transaction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/responses.ts#L54">types/responses.ts:54</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/beans.ts#L68">types/beans.ts:68</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1383,7 +1419,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 							<h5>timestamp<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
 						</li>
 						<li class="tsd-parameter">
-							<h5>type<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							<h5>type<span class="tsd-signature-symbol">: </span><a href="enums/transactiontype.html" class="tsd-signature-type">TransactionType</a></h5>
 						</li>
 					</ul>
 				</div>
@@ -1394,7 +1430,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">cback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/base.ts#L5">types/base.ts:5</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/base.ts#L5">types/base.ts:5</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1428,7 +1464,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">rs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/base.ts#L6">types/base.ts:6</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/base.ts#L6">types/base.ts:6</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1485,7 +1521,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">rise<span class="tsd-signature-symbol">:</span> <a href="interfaces/rise.html" class="tsd-signature-type">Rise</a><span class="tsd-signature-symbol"> =&nbsp;(() &#x3D;&gt; {const toRet &#x3D; {nodeAddress: &#x27;&#x27;,newWrapper(nodeAddress: string): APIWrapper {return {accounts: accounts(requester(nodeAddress)),loader: loader(requester(nodeAddress)),transactions: transactions(requester(nodeAddress)),peers: peers(requester(nodeAddress)),blocks: blocks(requester(nodeAddress)),signatures: signatures(requester(nodeAddress)),delegates: delegates(requester(nodeAddress)),multiSignatures: multiSignatures(requester(nodeAddress)),dapps: dapps(requester(nodeAddress))}}} as Rise;function rproxy&lt;R&gt;(obj: { params?: any, path: string, method?: string, data?: any }, cback: cback&lt;R&gt;): Promise&lt;R &amp; BaseApiResponse&gt; {return requester(toRet.nodeAddress).apply(null, arguments);};toRet.accounts &#x3D; accounts(rproxy);toRet.loader &#x3D; loader(rproxy);toRet.transactions &#x3D; transactions(rproxy);toRet.peers &#x3D; peers(rproxy);toRet.blocks &#x3D; blocks(rproxy);toRet.signatures &#x3D; signatures(rproxy);toRet.delegates &#x3D; delegates(rproxy);toRet.multiSignatures &#x3D; multiSignatures(rproxy);toRet.dapps &#x3D; dapps(rproxy);return toRet;})()</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/index.ts#L105">index.ts:105</a></li>
+						<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/index.ts#L106">index.ts:106</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1502,7 +1538,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/accounts.ts#L11">apis/accounts.ts:11</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/accounts.ts#L9">apis/accounts.ts:9</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1525,7 +1561,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/blocks.ts#L9">apis/blocks.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/blocks.ts#L9">apis/blocks.ts:9</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1548,7 +1584,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/dapps.ts#L8">apis/dapps.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/dapps.ts#L8">apis/dapps.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1571,7 +1607,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/delegates.ts#L8">apis/delegates.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/delegates.ts#L8">apis/delegates.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1594,7 +1630,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/loader.ts#L7">apis/loader.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/loader.ts#L7">apis/loader.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1617,7 +1653,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/multiSignatures.ts#L7">apis/multiSignatures.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/multiSignatures.ts#L7">apis/multiSignatures.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1640,7 +1676,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/peers.ts#L8">apis/peers.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/peers.ts#L8">apis/peers.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1663,7 +1699,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/index.ts#L80">index.ts:80</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/index.ts#L81">index.ts:81</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1686,7 +1722,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/signatures.ts#L7">apis/signatures.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/signatures.ts#L7">apis/signatures.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1709,7 +1745,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/apis/transactions.ts#L8">apis/transactions.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/apis/transactions.ts#L8">apis/transactions.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>

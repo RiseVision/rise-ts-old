@@ -912,6 +912,12 @@ img { max-width: 100%; }
 </header>
 <nav class="tsd-navigation secondary">
 	<ul>
+		<li class=" tsd-kind-enum">
+			<a href="../enums/peerstate.html" class="tsd-kind-icon">Peer<wbr>State</a>
+		</li>
+		<li class=" tsd-kind-enum">
+			<a href="../enums/transactiontype.html" class="tsd-kind-icon">Transaction<wbr>Type</a>
+		</li>
 		<li class=" tsd-kind-interface">
 			<a href="apiwrapper.html" class="tsd-kind-icon">APIWrapper</a>
 		</li>
@@ -957,6 +963,9 @@ img { max-width: 100%; }
 		<li class="current tsd-kind-interface tsd-is-external">
 			<a href="transactionsapi.html" class="tsd-kind-icon">TransactionsAPI</a>
 			<ul>
+				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<a href="transactionsapi.html#count" class="tsd-kind-icon">count</a>
+				</li>
 				<li class=" tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
 					<a href="transactionsapi.html#get" class="tsd-kind-icon">get</a>
 				</li>
@@ -1044,6 +1053,7 @@ img { max-width: 100%; }
 					<section class="tsd-index-section tsd-is-external">
 						<h3>Methods</h3>
 						<ul class="tsd-index-list">
+							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="transactionsapi.html#count" class="tsd-kind-icon">count</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external"><a href="transactionsapi.html#get" class="tsd-kind-icon">get</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="transactionsapi.html#getlist" class="tsd-kind-icon">get<wbr>List</a></li>
 							<li class="tsd-kind-method tsd-parent-kind-interface tsd-is-external"><a href="transactionsapi.html#getunconfirmedtransaction" class="tsd-kind-icon">get<wbr>Unconfirmed<wbr>Transaction</a></li>
@@ -1056,6 +1066,29 @@ img { max-width: 100%; }
 		</section>
 		<section class="tsd-panel-group tsd-member-group tsd-is-external">
 			<h2>Methods</h2>
+			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+				<a name="count" class="tsd-anchor"></a>
+				<h3>count</h3>
+				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
+					<li class="tsd-signature tsd-kind-icon">count<span class="tsd-signature-symbol">(</span>callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
+				</ul>
+				<ul class="tsd-descriptions">
+					<li class="tsd-description">
+						<aside class="tsd-sources">
+							<ul>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/TransactionsAPI.ts#L19">types/apis/TransactionsAPI.ts:19</a></li>
+							</ul>
+						</aside>
+						<h4 class="tsd-parameters-title">Parameters</h4>
+						<ul class="tsd-parameters">
+							<li>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
+							</li>
+						</ul>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
+					</li>
+				</ul>
+			</section>
 			<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface tsd-has-type-parameter tsd-is-external">
 				<a name="get" class="tsd-anchor"></a>
 				<h3>get</h3>
@@ -1066,7 +1099,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/TransactionsAPI.ts#L6">types/apis/TransactionsAPI.ts:6</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/TransactionsAPI.ts#L6">types/apis/TransactionsAPI.ts:6</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -1098,7 +1131,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/TransactionsAPI.ts#L8">types/apis/TransactionsAPI.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/TransactionsAPI.ts#L8">types/apis/TransactionsAPI.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1107,7 +1140,37 @@ img { max-width: 100%; }
 								<h5>query: <span class="tsd-signature-type">object</span></h5>
 								<ul class="tsd-parameters">
 									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:block<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:from<wbr>Height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:from<wbr>Unix<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:recipient<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:sender<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:to<wbr>Height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:to<wbr>Unix<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> and:type<span class="tsd-signature-symbol">?: </span><a href="../enums/transactiontype.html" class="tsd-signature-type">TransactionType</a></h5>
+									</li>
+									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> block<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> from<wbr>Height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> from<wbr>Unix<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
 									</li>
 									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> limit<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
@@ -1123,6 +1186,15 @@ img { max-width: 100%; }
 									</li>
 									<li class="tsd-parameter">
 										<h5><span class="tsd-flag ts-flagOptional">Optional</span> sender<wbr>Id<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">string</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> to<wbr>Height<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> to<wbr>Unix<wbr>Time<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span></h5>
+									</li>
+									<li class="tsd-parameter">
+										<h5><span class="tsd-flag ts-flagOptional">Optional</span> type<span class="tsd-signature-symbol">?: </span><a href="../enums/transactiontype.html" class="tsd-signature-type">TransactionType</a></h5>
 									</li>
 								</ul>
 							</li>
@@ -1144,7 +1216,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/TransactionsAPI.ts#L14">types/apis/TransactionsAPI.ts:14</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/TransactionsAPI.ts#L25">types/apis/TransactionsAPI.ts:25</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1170,7 +1242,7 @@ img { max-width: 100%; }
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/TransactionsAPI.ts#L12">types/apis/TransactionsAPI.ts:12</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/TransactionsAPI.ts#L23">types/apis/TransactionsAPI.ts:23</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1187,13 +1259,13 @@ img { max-width: 100%; }
 				<a name="send" class="tsd-anchor"></a>
 				<h3>send</h3>
 				<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface tsd-is-external">
-					<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>conf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+					<li class="tsd-signature tsd-kind-icon">send<span class="tsd-signature-symbol">(</span>conf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">object</span>, callback<span class="tsd-signature-symbol">?: </span><a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/ea6de75/src/types/apis/TransactionsAPI.ts#L10">types/apis/TransactionsAPI.ts:10</a></li>
+								<li>Defined in <a href="https://github.com/vekexasia/rise-js-sdk/blob/148c19f/src/types/apis/TransactionsAPI.ts#L21">types/apis/TransactionsAPI.ts:21</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1219,10 +1291,10 @@ img { max-width: 100%; }
 								</ul>
 							</li>
 							<li>
-								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								<h5><span class="tsd-flag ts-flagOptional">Optional</span> callback: <a href="../globals.html#cback" class="tsd-signature-type">cback</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol">&gt;</span></h5>
 							</li>
 						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">object</span><span class="tsd-signature-symbol"> | </span><a href="baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></h4>
 					</li>
 				</ul>
 			</section>
