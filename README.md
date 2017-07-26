@@ -1,4 +1,4 @@
-[![NPM](https://nodei.co/npm/risejs.png?mini=true)](https://npmjs.org/package/risejs) [![npm](https://img.shields.io/npm/v/risejs.svg)](https://npmjs.org/package/risejs) 
+[![npm](https://img.shields.io/npm/v/risejs.svg)](https://npmjs.org/package/risejs) 
 
 # Rise Javascript SDK
 
