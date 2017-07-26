@@ -101,3 +101,10 @@ var node2 = rise.newWrapper('http://node2:1234');
 // interact with node1 & node2 using the same APIs available within 'rise' variable.
 ```
 
+## Where is this library used?
+
+The library is currently used in the following projects:
+ - RISE bot in slack
+ - [dpostools.com (whole website)](https://dpostools.com/RISE)
+ - [rise_pool pool](https://dpospools.com/pool/rise_pool)
+ - Telegram [@delegatesbot](https://t.me/delegatesbot)
