@@ -13,7 +13,7 @@ All available methods are available [in the jsdoc](https://risevision.github.io/
 Either download `dist/browser/index.js` or use gitcdn as follows:
 
 ```html
-<script type="text/javascript" src="https://gitcdn.xyz/repo/risevision/rise-js-sdk/master/dist/browser/index.js"></script>
+<script type="text/javascript" src="https://gitcdn.xyz/cdn/risevision/rise-js-sdk/master/dist/browser/index.js"></script>
 <script>
   rise.nodeAddress = 'http://example.com:5566'; // Set your node url here. (no leading slash)
   // If you don't have a nodejust use https://wallet.rise.vision
