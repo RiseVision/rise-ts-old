@@ -1,3 +1,5 @@
+[![NPM](https://nodei.co/npm/risejs.png?mini=true)](https://npmjs.org/package/risejs) [![npm](https://img.shields.io/npm/v/risejs.svg)](https://npmjs.org/package/risejs) 
+
 # Rise Javascript SDK
 
 Through this sdk you can interact with a rise node in an easy way. The library works both in the browser and Node.js.
