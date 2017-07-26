@@ -4,7 +4,7 @@ Through this sdk you can interact with a rise node in an easy way. The library w
 
 ## Documentation
 
-All available methods are available [in the jsdoc](https://vekexasia.github.io/rise-js-sdk/interfaces/rise.html)
+All available methods are available [in the jsdoc](https://risevision.github.io/rise-js-sdk/interfaces/rise.html)
 
 ## Quick Start
 
@@ -13,9 +13,10 @@ All available methods are available [in the jsdoc](https://vekexasia.github.io/r
 Either download `dist/browser/index.js` or use gitcdn as follows:
 
 ```html
-<script type="text/javascript" src="https://gitcdn.xyz/repo/vekexasia/rise-js-sdk/master/dist/browser/index.js"></script>
+<script type="text/javascript" src="https://gitcdn.xyz/repo/risevision/rise-js-sdk/master/dist/browser/index.js"></script>
 <script>
   rise.nodeAddress = 'http://example.com:5566'; // Set your node url here. (no leading slash)
+  // If you don't have a nodejust use https://wallet.rise.vision
   // ...
 </script>
 
@@ -24,11 +25,11 @@ Either download `dist/browser/index.js` or use gitcdn as follows:
 ### Include it with npm (Suitable also for webpack/browserify)
 
 ```bash
-npm i rise-js-sdk -D
+npm i risejs -D
 ```
 
 ```javascript
-var rise = require('rise-js-sdk').rise;
+var rise = require('risejs').rise;
 rise.nodeAddress= 'http://example.com:5566'; // Set your node url here. (no leading slash) 
 
 ```
@@ -92,7 +93,7 @@ rise.accounts.open('secret')
 
 In some cases you need to connect to multiple nodes.
 
-To do so, just use the [newWrapper](https://vekexasia.github.io/rise-js-sdk/interfaces/rise.html#newwrapper) method:
+To do so, just use the [newWrapper](https://risevision.github.io/rise-js-sdk/interfaces/rise.html#newwrapper) method:
 
 ```javascript
 var node1 = rise.newWrapper('http://node1:1234');
