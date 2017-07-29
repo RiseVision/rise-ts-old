@@ -6,7 +6,7 @@ Through this sdk you can interact with a rise node in an easy way. The library w
 
 ## Documentation
 
-All available methods are available [in the jsdoc](https://risevision.github.io/rise-js-sdk/interfaces/rise.html)
+All available methods are available [in the jsdoc](https://risevision.github.io/rise-ts/interfaces/rise.html)
 
 ## Quick Start
 
