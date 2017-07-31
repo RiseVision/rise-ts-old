@@ -8,8 +8,11 @@ import {
   MultiSignaturesAPI,
   PeersAPI,
   SignaturesAPI,
-  TransactionsAPI
+  TransactionsAPI,
+  TransportApi,
+  TransportHeaders
 } from './types/apis/';
+
 export * from './types/beans';
 import {
   accounts,
@@ -20,9 +23,11 @@ import {
   multiSignatures,
   peers,
   signatures,
-  transactions
+  transactions,
+  transport
 } from './apis/';
 import { BaseApiResponse, cback } from './types/base';
+
 
 export interface Rise extends APIWrapper {
   /**
@@ -75,18 +80,25 @@ export interface APIWrapper {
   /**
    * Decentralized Apps APIs (in progress)
    */
-  dapps: DappsAPI
+  dapps: DappsAPI,
+
+  /**
+   * Access transport APIs
+   * @param {TransportHeaders} headers
+   * @returns {TransportApi}
+   */
+  transport: (headers: TransportHeaders) => TransportApi
 }
 
-const requester = (nodeAddress) => <R>(obj: { params?: any, path: string, method?: string, data?: any }, cback: cback<R>): Promise<R & BaseApiResponse> => {
+const requester         = (nodeAddress) => <R>(obj: { noApiPrefix?: boolean, headers?: any, params?: any, path: string, method?: string, data?: any }, cback: cback<R>): Promise<R & BaseApiResponse> => {
   return axios({
-    url: `${nodeAddress}/api${obj.path}`,
+    url : `${nodeAddress}/${obj.noApiPrefix ? '' : 'api'}${obj.path}`,
     json: true,
     ...obj
   })
     .then(resp => {
       if (resp.data.success == false) {
-        return Promise.reject(new Error(resp.data.error));
+        return Promise.reject(new Error(resp.data.error || resp.data.message));
       }
       return resp.data;
     })
@@ -108,32 +120,35 @@ export const rise: Rise = (() => {
     nodeAddress: '',
     newWrapper(nodeAddress: string): APIWrapper {
       return {
-        accounts: accounts(requester(nodeAddress)),
-        loader: loader(requester(nodeAddress)),
-        transactions: transactions(requester(nodeAddress)),
-        peers: peers(requester(nodeAddress)),
-        blocks: blocks(requester(nodeAddress)),
-        signatures: signatures(requester(nodeAddress)),
-        delegates: delegates(requester(nodeAddress)),
+        accounts       : accounts(requester(nodeAddress)),
+        loader         : loader(requester(nodeAddress)),
+        transactions   : transactions(requester(nodeAddress)),
+        peers          : peers(requester(nodeAddress)),
+        blocks         : blocks(requester(nodeAddress)),
+        signatures     : signatures(requester(nodeAddress)),
+        delegates      : delegates(requester(nodeAddress)),
         multiSignatures: multiSignatures(requester(nodeAddress)),
-        dapps: dapps(requester(nodeAddress))
+        dapps          : dapps(requester(nodeAddress)),
+        transport      : transport(requester(nodeAddress))
       }
     }
   } as Rise;
 
   function rproxy<R>(obj: { params?: any, path: string, method?: string, data?: any }, cback: cback<R>): Promise<R & BaseApiResponse> {
     return requester(toRet.nodeAddress).apply(null, arguments);
-  };
+  }
 
-  toRet.accounts = accounts(rproxy);
-  toRet.loader = loader(rproxy);
-  toRet.transactions = transactions(rproxy);
-  toRet.peers = peers(rproxy);
-  toRet.blocks = blocks(rproxy);
-  toRet.signatures = signatures(rproxy);
-  toRet.delegates = delegates(rproxy);
+  toRet.accounts        = accounts(rproxy);
+  toRet.loader          = loader(rproxy);
+  toRet.transactions    = transactions(rproxy);
+  toRet.peers           = peers(rproxy);
+  toRet.blocks          = blocks(rproxy);
+  toRet.signatures      = signatures(rproxy);
+  toRet.delegates       = delegates(rproxy);
   toRet.multiSignatures = multiSignatures(rproxy);
-  toRet.dapps = dapps(rproxy);
+  toRet.dapps           = dapps(rproxy);
+  toRet.transport       = transport(rproxy);
+
   return toRet;
 })();
 

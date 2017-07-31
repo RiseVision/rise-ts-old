@@ -65,17 +65,19 @@ export enum TransactionType {
   OUT_TRANSFER = 7
 }
 
-export type Transaction<T> = {
+export type BaseTransaction<T> = {
   type: TransactionType
   amount: number
   senderPublicKey: string
-  requesterPublicKey: string
+  requesterPublicKey?: string
   timestamp: number
   asset: T
   recipientId: string
   signature: string
   id: string
   fee: number
+}
+export type Transaction<T> = BaseTransaction<T> & {
   senderId: string
   relays: number
   receivedAt: string

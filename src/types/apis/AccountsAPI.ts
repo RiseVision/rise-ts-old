@@ -6,7 +6,6 @@ export interface AccountsAPI {
    * Opens a new account using the specified secrect string
    * @param secret the string to use to generate the new account
    * @param callback callback where to receive the result.
-   * @internal
    */
   open(secret: string, callback?: cback<{ account: Account }>): Promise<{ account: Account } & BaseApiResponse>
 
