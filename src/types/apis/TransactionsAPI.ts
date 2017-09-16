@@ -3,7 +3,7 @@ import { BaseApiResponse, cback } from '../base';
 
 export interface TransactionsAPI {
 
-  get<T>(id: string, callback?: cback<{ transaction: Transaction<T> }>): Promise<{ transaction: Transaction<T> } & BaseApiResponse>
+  get<T>(id: string, callback?: cback<{ transaction: Transaction<T> }>): Promise<{ transaction: Transaction<T> & {height:number, blockId: string, confirmations:number} } & BaseApiResponse>
 
   getList(query: {
     blockId?: string, "and:blockId"?: string,
