@@ -94,6 +94,7 @@ const requester         = (nodeAddress) => <R>(obj: { noApiPrefix?: boolean, hea
   return axios({
     url : `${nodeAddress}/${obj.noApiPrefix ? '' : 'api'}${obj.path}`,
     json: true,
+    timeout: 4000,
     ...obj
   })
     .then(resp => {

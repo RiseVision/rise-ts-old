@@ -9,22 +9,31 @@ export interface BlockStatusResponse {
   supply: number
 }
 
-export interface Block {
+export interface BaseBlock {
   id: string
-  version: number
-  timestamp: number
   height: number
-  previousBlock: string
+  blockSignature: string
+  generatorPublicKey: string
   numberOfTransactions: number
+  payloadHash: string
+  payloadLength: number
+  previousBlock: string
+  timestamp: number
   totalAmount: number
   totalFee: number
   reward: number
-  payloadLength: number
-  payloadHash: string
-  generatorPublicKey: string
-  generatorId: string
-  blockSignature: string
+  version: number
+
+
+}
+
+export interface ForgedBlock extends BaseBlock {
+  transactions: BaseTransaction<any>[]
+}
+
+export interface Block extends BaseBlock {
   confirmations: number
+  generatorId: string
   totalForged: string
 }
 
@@ -47,21 +56,21 @@ export type Account = {
   unconfirmedBalance: string,
   balance: string,
   publicKey: string,
-  unconfirmedSignature: 0|1,
-  secondSignature: 0|1,
+  unconfirmedSignature: 0 | 1,
+  secondSignature: 0 | 1,
   secondPublicKey: string,
   multisignatures: string[],
   u_multisignatures: string[]
 }
 
 export enum TransactionType {
-  SEND = 0,
-  SIGNATURE = 1,
-  DELEGATE = 2,
-  VOTE = 3,
-  MULTI = 4,
-  DAPP = 5,
-  IN_TRANSFER = 6,
+  SEND         = 0,
+  SIGNATURE    = 1,
+  DELEGATE     = 2,
+  VOTE         = 3,
+  MULTI        = 4,
+  DAPP         = 5,
+  IN_TRANSFER  = 6,
   OUT_TRANSFER = 7
 }
 
@@ -99,7 +108,7 @@ export type Peer = {
 }
 
 export enum PeerState {
-  BANNED = 0,
+  BANNED       = 0,
   DISCONNECTED = 1,
-  ACTIVE = 2
+  ACTIVE       = 2
 }
