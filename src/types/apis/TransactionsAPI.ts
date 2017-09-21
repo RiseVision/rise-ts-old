@@ -14,7 +14,7 @@ export interface TransactionsAPI {
     toHeight?: number, "and:toHeight"?: number,
     fromUnixTime?: number, "and:fromUnixTime"?: number,
     toUnixTime?: number, "and:toUnixTime"?: number,
-    limit?: number, offset?: number, orderBy?: string, }, callback?: cback<{ transactions: (Transaction<any> & {height:number, blockId: string, confirmations:number})[] }>): Promise<{ transactions: (Transaction<any> & {height:number, blockId: string, confirmations:number})[] } & BaseApiResponse>
+    limit?: number, offset?: number, orderBy?: string, }, callback?: cback<{ count:number, transactions: (Transaction<any> & {height:number, blockId: string, confirmations:number})[] }>): Promise<{ count:number, transactions: (Transaction<any> & {height:number, blockId: string, confirmations:number})[] } & BaseApiResponse>
 
   count(callback?: cback<{ confirmed: number, multisignature: number, unconfirmed: number, queued: number }>): Promise<{ confirmed: number, multisignature: number, unconfirmed: number, queued: number } & BaseApiResponse>
 
