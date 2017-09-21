@@ -1,6 +1,6 @@
 {
   "name": "risejs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Rise SDK built in Node.js",
   "main": "dist/es5/index.js",
   "types": "dist/es5/index.d.ts",
