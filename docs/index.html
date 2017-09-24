@@ -963,6 +963,9 @@ img { max-width: 100%; }
 		<li class=" tsd-kind-interface">
 			<a href="interfaces/rise.html" class="tsd-kind-icon">Rise</a>
 		</li>
+		<li class=" tsd-kind-interface">
+			<a href="interfaces/signature.html" class="tsd-kind-icon">Signature</a>
+		</li>
 		<li class=" tsd-kind-interface tsd-is-external">
 			<a href="interfaces/signaturesapi.html" class="tsd-kind-icon">SignaturesAPI</a>
 		</li>
@@ -983,6 +986,9 @@ img { max-width: 100%; }
 		</li>
 		<li class=" tsd-kind-type-alias">
 			<a href="globals.html#basetransaction" class="tsd-kind-icon">Base<wbr>Transaction</a>
+		</li>
+		<li class=" tsd-kind-type-alias">
+			<a href="globals.html#multisigtransaction" class="tsd-kind-icon">Multi<wbr>Sig<wbr>Transaction</a>
 		</li>
 		<li class=" tsd-kind-type-alias">
 			<a href="globals.html#peer" class="tsd-kind-icon">Peer</a>
@@ -1160,6 +1166,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/multisignaturesapi.html" class="tsd-kind-icon">Multi<wbr>SignaturesAPI</a></li>
 							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/peersapi.html" class="tsd-kind-icon">PeersAPI</a></li>
 							<li class="tsd-kind-interface"><a href="interfaces/rise.html" class="tsd-kind-icon">Rise</a></li>
+							<li class="tsd-kind-interface"><a href="interfaces/signature.html" class="tsd-kind-icon">Signature</a></li>
 							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/signaturesapi.html" class="tsd-kind-icon">SignaturesAPI</a></li>
 							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/transactionsapi.html" class="tsd-kind-icon">TransactionsAPI</a></li>
 							<li class="tsd-kind-interface tsd-is-external"><a href="interfaces/transportapi.html" class="tsd-kind-icon">Transport<wbr>Api</a></li>
@@ -1172,6 +1179,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 							<li class="tsd-kind-type-alias"><a href="globals.html#account" class="tsd-kind-icon">Account</a></li>
 							<li class="tsd-kind-type-alias"><a href="globals.html#apipromise" class="tsd-kind-icon">Api<wbr>Promise</a></li>
 							<li class="tsd-kind-type-alias"><a href="globals.html#basetransaction" class="tsd-kind-icon">Base<wbr>Transaction</a></li>
+							<li class="tsd-kind-type-alias"><a href="globals.html#multisigtransaction" class="tsd-kind-icon">Multi<wbr>Sig<wbr>Transaction</a></li>
 							<li class="tsd-kind-type-alias"><a href="globals.html#peer" class="tsd-kind-icon">Peer</a></li>
 							<li class="tsd-kind-type-alias"><a href="globals.html#transaction" class="tsd-kind-icon">Transaction</a></li>
 							<li class="tsd-kind-type-alias"><a href="globals.html#cback" class="tsd-kind-icon">cback</a></li>
@@ -1211,8 +1219,8 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Account<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/beans.ts#L54">types/beans.ts:54</a></li>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L97">apis/accounts.ts:97</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/beans.ts#L54">types/beans.ts:54</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L97">apis/accounts.ts:97</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1253,7 +1261,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">address<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L98">apis/accounts.ts:98</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L98">apis/accounts.ts:98</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1263,7 +1271,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L100">apis/accounts.ts:100</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L100">apis/accounts.ts:100</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1273,7 +1281,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">multisignatures<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L105">apis/accounts.ts:105</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L105">apis/accounts.ts:105</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1283,7 +1291,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">public<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L101">apis/accounts.ts:101</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L101">apis/accounts.ts:101</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1293,7 +1301,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">second<wbr>Public<wbr>Key<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L104">apis/accounts.ts:104</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L104">apis/accounts.ts:104</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1303,7 +1311,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">second<wbr>Signature<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L103">apis/accounts.ts:103</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L103">apis/accounts.ts:103</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1313,7 +1321,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">u_<wbr>multisignatures<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L106">apis/accounts.ts:106</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L106">apis/accounts.ts:106</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1323,7 +1331,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">unconfirmed<wbr>Balance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L99">apis/accounts.ts:99</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L99">apis/accounts.ts:99</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1333,7 +1341,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<div class="tsd-signature tsd-kind-icon">unconfirmed<wbr>Signature<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L102">apis/accounts.ts:102</a></li>
+							<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L102">apis/accounts.ts:102</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -1344,7 +1352,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Api<wbr>Promise<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> | </span><a href="interfaces/baseapiresponse.html" class="tsd-signature-type">BaseApiResponse</a><span class="tsd-signature-symbol">&gt;</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/base.ts#L7">types/base.ts:7</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/base.ts#L7">types/base.ts:7</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1354,7 +1362,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Base<wbr>Transaction<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/beans.ts#L77">types/beans.ts:77</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/beans.ts#L77">types/beans.ts:77</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1394,12 +1402,22 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				</div>
 			</section>
 			<section class="tsd-panel tsd-member tsd-kind-type-alias">
+				<a name="multisigtransaction" class="tsd-anchor"></a>
+				<h3>Multi<wbr>Sig<wbr>Transaction</h3>
+				<div class="tsd-signature tsd-kind-icon">Multi<wbr>Sig<wbr>Transaction<span class="tsd-signature-symbol">:</span> <a href="globals.html#basetransaction" class="tsd-signature-type">BaseTransaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
+				<aside class="tsd-sources">
+					<ul>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/beans.ts#L95">types/beans.ts:95</a></li>
+					</ul>
+				</aside>
+			</section>
+			<section class="tsd-panel tsd-member tsd-kind-type-alias">
 				<a name="peer" class="tsd-anchor"></a>
 				<h3>Peer</h3>
 				<div class="tsd-signature tsd-kind-icon">Peer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/beans.ts#L96">types/beans.ts:96</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/beans.ts#L99">types/beans.ts:99</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1447,7 +1465,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">Transaction<span class="tsd-signature-symbol">:</span> <a href="globals.html#basetransaction" class="tsd-signature-type">BaseTransaction</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">object</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/beans.ts#L89">types/beans.ts:89</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/beans.ts#L89">types/beans.ts:89</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1457,7 +1475,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">cback<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/base.ts#L5">types/base.ts:5</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/base.ts#L5">types/base.ts:5</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1491,7 +1509,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">rs<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">function</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/types/base.ts#L6">types/base.ts:6</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/types/base.ts#L6">types/base.ts:6</a></li>
 					</ul>
 				</aside>
 				<div class="tsd-type-declaration">
@@ -1554,7 +1572,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 				<div class="tsd-signature tsd-kind-icon">rise<span class="tsd-signature-symbol">:</span> <a href="interfaces/rise.html" class="tsd-signature-type">Rise</a><span class="tsd-signature-symbol"> =&nbsp;(() &#x3D;&gt; {const toRet &#x3D; {nodeAddress: &#x27;&#x27;,newWrapper(nodeAddress: string): APIWrapper {return {accounts       : accounts(requester(nodeAddress)),loader         : loader(requester(nodeAddress)),transactions   : transactions(requester(nodeAddress)),peers          : peers(requester(nodeAddress)),blocks         : blocks(requester(nodeAddress)),signatures     : signatures(requester(nodeAddress)),delegates      : delegates(requester(nodeAddress)),multiSignatures: multiSignatures(requester(nodeAddress)),dapps          : dapps(requester(nodeAddress)),transport      : transport(requester(nodeAddress))}}} as Rise;function rproxy&lt;R&gt;(obj: { params?: any, path: string, method?: string, data?: any }, cback: cback&lt;R&gt;): Promise&lt;R &amp; BaseApiResponse&gt; {return requester(toRet.nodeAddress).apply(null, arguments);}toRet.accounts        &#x3D; accounts(rproxy);toRet.loader          &#x3D; loader(rproxy);toRet.transactions    &#x3D; transactions(rproxy);toRet.peers           &#x3D; peers(rproxy);toRet.blocks          &#x3D; blocks(rproxy);toRet.signatures      &#x3D; signatures(rproxy);toRet.delegates       &#x3D; delegates(rproxy);toRet.multiSignatures &#x3D; multiSignatures(rproxy);toRet.dapps           &#x3D; dapps(rproxy);toRet.transport       &#x3D; transport(rproxy);return toRet;})()</span></div>
 				<aside class="tsd-sources">
 					<ul>
-						<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/index.ts#L119">index.ts:119</a></li>
+						<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/index.ts#L119">index.ts:119</a></li>
 					</ul>
 				</aside>
 			</section>
@@ -1571,7 +1589,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/accounts.ts#L9">apis/accounts.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/accounts.ts#L9">apis/accounts.ts:9</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1594,7 +1612,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/blocks.ts#L9">apis/blocks.ts:9</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/blocks.ts#L9">apis/blocks.ts:9</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1617,7 +1635,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/dapps.ts#L8">apis/dapps.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/dapps.ts#L8">apis/dapps.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1640,7 +1658,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/delegates.ts#L8">apis/delegates.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/delegates.ts#L8">apis/delegates.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1663,7 +1681,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/loader.ts#L7">apis/loader.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/loader.ts#L7">apis/loader.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1686,7 +1704,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/multiSignatures.ts#L7">apis/multiSignatures.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/multiSignatures.ts#L7">apis/multiSignatures.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1709,7 +1727,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/peers.ts#L8">apis/peers.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/peers.ts#L8">apis/peers.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1732,7 +1750,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/index.ts#L93">index.ts:93</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/index.ts#L93">index.ts:93</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1755,7 +1773,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/signatures.ts#L7">apis/signatures.ts:7</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/signatures.ts#L7">apis/signatures.ts:7</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1778,7 +1796,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/transactions.ts#L8">apis/transactions.ts:8</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/transactions.ts#L8">apis/transactions.ts:8</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1801,7 +1819,7 @@ rise.nodeAddress= <span class="hljs-string">'http://example.com:5566'</span>; <s
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/RiseVision/rise-ts/blob/1387e35/src/apis/transport.ts#L5">apis/transport.ts:5</a></li>
+								<li>Defined in <a href="https://github.com/RiseVision/rise-js-sdk/blob/c4ff5a0/src/apis/transport.ts#L5">apis/transport.ts:5</a></li>
 							</ul>
 						</aside>
 						<h4 class="tsd-parameters-title">Parameters</h4>
