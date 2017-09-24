@@ -92,6 +92,9 @@ export type Transaction<T> = BaseTransaction<T> & {
   receivedAt: string
 }
 
+export type MultiSigTransaction<T> = BaseTransaction<T> & {
+  signatures: string[]
+}
 
 export type Peer = {
   ip: string
@@ -111,4 +114,15 @@ export enum PeerState {
   BANNED       = 0,
   DISCONNECTED = 1,
   ACTIVE       = 2
+}
+
+export interface Signature {
+  /**
+   * Transaction ID
+   */
+  transaction: string,
+  /**
+   * Signature
+   */
+  signature: string
 }

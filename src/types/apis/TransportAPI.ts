@@ -1,4 +1,4 @@
-import { Peer, Transaction, TransactionType, BaseTransaction } from '../beans';
+import {Peer, Transaction, TransactionType, BaseTransaction, Signature} from '../beans';
 import { BaseApiResponse, cback } from '../base';
 
 export interface TransportHeaders {
@@ -48,5 +48,14 @@ export interface TransportApi {
    * @returns {Promise<BaseApiResponse>}
    */
   postTransactions(txs: BaseTransaction<any>[], callback?: cback<void>): Promise<BaseApiResponse>
+
+  /**
+   * Post one or more signature for a multisig tx.
+   * @param {Signature | Signature[]} signature
+   * @param {cback<any>} callback
+   * @returns {Promise<BaseApiResponse>}
+   */
+  postSignature(signature: Signature|Signature[], callback?: cback<void>): Promise<BaseApiResponse>
+
 
 }
